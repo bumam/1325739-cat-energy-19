@@ -13,7 +13,9 @@
         alt="Кэт-энержи">
     </a>
     <nav class="main-nav">
-      <span class="main-nav__btn">Открыть меню</span>
+      <button class="main-nav__btn" type="button">
+        <span>Открыть или закрыть меню</span>
+      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -31,14 +33,11 @@
   </header>
 
   <main class="page-main">
-    <h1 class="visually-hidden"> Cat Energy - функциональные вкусняшки для котов</h1>
-
     <section class="main-promo">
-      <h2 class="visually-hidden">Основное</h2>
-      <h2 class="main-promo__main-headline">Функциональное питание для котов"</h2>
+      <h1 class="main-promo__main-headline">Функциональное питание для котов"</h1>
       <p class="main-promo__slogan">Занялся собой? Займись котом!</p>
       <img src="#" width=280 height=270 alt="Cat Energy Курица">
-      <a class="main-promo__button">Подобрать программу</a>
+      <a class="button">Подобрать программу</a>
     </section>
 
     <section class="program-description">
@@ -59,10 +58,12 @@
 
     <section class="how-it-works">
       <h2 class="how-it-works__header">Как это работает</h2>
-      <p class="how-it-works__item">Функциональное питание содержит только полезные питательные вещества.</p>
-      <p class="how-it-works__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-      <p class="how-it-works__item">Замените один-два приема обычной еды на наше функциональное питание.</p>
-      <p class="how-it-works__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+      <ul>
+      <li><p class="how-it-works__item">Функциональное питание содержит только полезные питательные вещества.</p></li>
+      <li><p class="how-it-works__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p></li>
+      <li><p class="how-it-works__item">Замените один-два приема обычной еды на наше функциональное питание.</p></li>
+      <li><p class="how-it-works__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p></li>
+    </ul>
     </section>
 
   </main>
@@ -70,13 +71,11 @@
     <a class="footer-page__logo">
       <img class="footer-page__logo-image" src="img/footer-logo-svg.png" width="128" height="24" alt="Кэт-энержи">
     </a>
-    <div class="footer-page__social ">
-      <ul class="social">
-        <li><a class="social__vk">VK</a></li>
-        <li><a class="social__instagram">Instagram</a></li>
-        <li><a class="social__facebook">Facebook</a></li>
-      </ul>
-    </div>
+    <ul class="social">
+      <li  class="social__item"><a class="social__link"><img src="#" class="social__icon">VK</a></li>
+      <li class="social__item"><a class="social__link"><img src="#" class="social__icon">Instagram</a></li>
+      <li class="social__item"><a class="social__link"><img src="#" class="social__icon">Facebook</a></li>
+    </ul>
     <a class="footer-page__HTML-Academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
   </footer>
 </body>
