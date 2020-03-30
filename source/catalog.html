@@ -13,17 +13,17 @@
         alt="Кэт-энержи">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <span class="main-nav__btn">Открыть меню</span>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item site-list__item--active">
-            <a>Каталог продукции</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">подбор программы</a>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="form.html.html">подбор программы</a>
           </li>
         </ul>
       </div>
@@ -151,30 +151,26 @@
         </div>
         <a class="products__button" href="">Заказать</a>
       </article>
+      <div class="show-more">
+        <h3 class="show-more__header">Показать еще 100500 товаров</h3>
+        <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
+        <a class="show-more__button" href="">Показать все</a>
+      </div>
     </section>
-
-    <div class="show-more">
-      <h3 class="show-more__header">Показать еще 100500 товаров</h3>
-      <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
-      <a class="show-more__button" href="">Показать все</a>
-    </div>
   </main>
 
   <footer class="footer-page">
     <a class="footer-page__logo">
       <img class="footer-page__logo-image" src="img/footer-logo-svg.png" width="128" height="24" alt="Кэт-энержи">
     </a>
-    <section class="footer-page__social social-items">
-      <h2 class="visually-hidden">Социальные сети</h2>
-      <a class="social-items_vk">VK</a>
-      <a class="social-items_instagram">Instagram</a>
-      <a class="social-items_facebook">Facebook</a>
-    </section>
-
-    <div class="footer-page__author">
-      <a class="footer-page__HTML-Academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="footer-page__social ">
+      <ul class="social">
+        <li><a class="social__vk">VK</a></li>
+        <li><a class="social__instagram">Instagram</a></li>
+        <li><a class="social__facebook">Facebook</a></li>
+      </ul>
     </div>
-
+    <a class="footer-page__HTML-Academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
   </footer>
 </body>
 
