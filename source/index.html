@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -10,7 +10,7 @@
   <header class="page-header">
     <a class="page-header__logo">
       <img class="page-header__logo-image" src="img/logo-mobile-header-svg.png" width="191" height="39"
-        alt="Кэт-энержи">
+        alt="Кэт-энержи" />
     </a>
     <nav class="main-nav">
       <button class="main-nav__btn" type="button">
@@ -25,7 +25,10 @@
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link" href="form.html.html">подбор программы</a>
+            <a class="main-nav__link" href="form.html">подбор программы</a>
+            <p class="main-nav__addition">
+              Заполните анкету и мы подберем программу питания для вашего кота
+            </p>
           </li>
         </ul>
       </div>
@@ -34,9 +37,11 @@
 
   <main class="page-main">
     <section class="main-promo">
-      <h1 class="main-promo__main-headline">Функциональное питание для котов"</h1>
+      <h1 class="main-promo__main-headline">
+        Функциональное питание для котов"
+      </h1>
       <p class="main-promo__slogan">Занялся собой? Займись котом!</p>
-      <img src="#" width=280 height=270 alt="Cat Energy Курица">
+      <img src="#" width="280" height="270" alt="Cat Energy Курица" />
       <a class="button">Подобрать программу</a>
     </section>
 
@@ -44,40 +49,151 @@
       <h2 class="visually-hidden">Описание программ</h2>
       <article class="program-description__block">
         <h3 class="program-description__header">Похудение</h3>
-        <p class="program-description__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
-          Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+        <p class="program-description__text">
+          Ваш кот весит больше собаки и почти утратил способность лазить по
+          деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
+          сбросить лишний вес.
+        </p>
         <a class="program-description__more">Каталог Slim</a>
       </article>
       <article class="program-description__block">
         <h3 class="program-description__header">Набор массы</h3>
-        <p class="program-description__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
-          Pro поможет вашему коту нарастить необходимые мышцы!</p>
+        <p class="program-description__text">
+          Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+          Energy Pro поможет вашему коту нарастить необходимые мышцы!
+        </p>
         <a class="program-description__more">Каталог PRO</a>
       </article>
     </section>
 
     <section class="how-it-works">
       <h2 class="how-it-works__header">Как это работает</h2>
-      <ul>
-      <li><p class="how-it-works__item">Функциональное питание содержит только полезные питательные вещества.</p></li>
-      <li><p class="how-it-works__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p></li>
-      <li><p class="how-it-works__item">Замените один-два приема обычной еды на наше функциональное питание.</p></li>
-      <li><p class="how-it-works__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p></li>
-    </ul>
+      <ul class="how-it-works__list">
+        <li class="how-it-works__item">
+          <p class="how-it-works__text">
+            Функциональное питание содержит только полезные питательные
+            вещества.
+          </p>
+        </li>
+        <li class="how-it-works__item">
+          <p class="how-it-works__text">
+            Выпускается в виде порошка, который нужно лишь залить кипятком и
+            готово.
+          </p>
+        </li>
+        <li class="how-it-works__item">
+          <p class="how-it-works__text">
+            Замените один-два приема обычной еды на наше функциональное
+            питание.
+          </p>
+        </li>
+        <li class="how-it-works__item">
+          <p class="how-it-works__text">
+            Уже через месяц наслаждайтесь изменениями к лучшему вашего
+            питомца!
+          </p>
+        </li>
+      </ul>
     </section>
 
+    <section class="real-cat">
+      <h2 class="real-cat__header">Живой пример</h2>
+      <p class="real-cat__description">
+        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+        Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
+        этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+      </p>
+      <div class="results">
+        <p class="results__main-result">5 кг</p>
+        <p class="results__wrtite">снижение веса</p>
+      </div>
+      <div class="results">
+        <p class="results__main-result">60 дней</p>
+        <p class="results__wrtite">затрачено времени</p>
+      </div>
+      <p class="real-cat__spending">Затраты на питание: 15 000 руб.</p>
+
+      <div class="slider">
+        <div class="slider-image">
+          <img class="slider-image__cat" alt="fat-cat" src="#">
+          <img class="slider-image__cat" alt="skinny-cat" src="#">
+        </div>
+        <div class="slider__buttons-block">
+          <div class="slider__progress-toggle">
+            <button class="slider__progress-button slider__progress-button--before" type="button">
+              Было
+            </button>
+          </div>
+          <div class="slider__range-wrapper">
+            <span class="slider__green-range"></span>
+          </div>
+          <div class="slider__progress-toggle">
+            <button class="slider__progress-button slider__progress-button--after" type="button">
+              Стало
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cooperation">
+      <div class="cooperation__wrapper">
+        <div class="cooperation__inner">
+          <h2 class="cooperation__title">
+            Приглашаем к сотрудничеству дилеров!
+          </h2>
+          <div class="cooperation__adress">
+            <p class="cooperation__street">
+              ул. Большая Конюшенная, д. 19/8
+            </p>
+            <p class="cooperation__city">Санкт-Петербург</p>
+          </div>
+        </div>
+      </div>
+      <div class="map" id="map" style="width: auto; height: 400px">
+      </div>
+    </section>
   </main>
   <footer class="footer-page">
     <a class="footer-page__logo">
-      <img class="footer-page__logo-image" src="img/footer-logo-svg.png" width="128" height="24" alt="Кэт-энержи">
+      <img class="footer-page__logo-image" src="img/footer-logo-svg.png" width="128" height="24" alt="Кэт-энержи" />
     </a>
     <ul class="social">
-      <li  class="social__item"><a class="social__link"><img src="#" class="social__icon">VK</a></li>
-      <li class="social__item"><a class="social__link"><img src="#" class="social__icon">Instagram</a></li>
-      <li class="social__item"><a class="social__link"><img src="#" class="social__icon">Facebook</a></li>
+      <li class="social__item">
+        <a class="social__link"><img src="#" class="social__icon" />VK</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link"><img src="#" class="social__icon" />Instagram</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link"><img src="#" class="social__icon" />Facebook</a>
+      </li>
     </ul>
     <a class="footer-page__HTML-Academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
   </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script type="text/javascript">
+    ymaps.ready(init);
+
+    function init() {
+      myMap = new ymaps.Map("map", {
+        center: [59.938631, 30.323055],
+        zoom: 17
+      });
+
+      myMap.behaviors.disable('scrollZoom');
+
+      var myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/map-pin-png-50.png',
+        iconImageSize: [75, 73],
+        iconImageOffset: [-36, -53]
+      });
+      myMap.geoObjects.add(myPlacemark);
+    }
+
+  </script>
+
 </body>
 
 </html>
