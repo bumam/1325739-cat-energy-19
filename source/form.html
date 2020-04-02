@@ -36,50 +36,50 @@
     <form class="cat-form" action="https://echo.htmlacademy.ru" method="post">
       <h1 class="cat-form__header">Подбор программы</h1>
       <h2 class="cat-form__text">Заполните анкету и мы подберем
-        программу питания для вашего кота</h3>
-        <fieldset class="cat-form__block">
-      <div class="cat-form__data">
-        <label class="field-text">
-          <span class="field-text__lebel">Имя:*</span>
-          <input class="field-text__input"  name="yourname" type="text" placeholder="БАРСИК" required>
-      </label>
-      </div>
-      <div class="cat-form__data">
-        <label class="field-number">
-          <span class="field-number__lebel">Вес (кг):*</span>
-          <input class="field-number__input" name="weight" type="number" value="7" max="20" step="0.1" required>
-       </label>
-      </div>
-      <div class="cat-form__data">
-        <label class="field-number">
-         <span class="field-number__lebel">Возраст (лет):</span>
-         <input class="field-number__input" name="age" type="number" value="7" required>
-      </label>
-      </div>
-    </fieldset>
+        программу питания для вашего кота</h2>
+      <fieldset class="cat-form__block">
+        <div class="cat-form__data">
+          <label class="field-text">
+            <span class="field-text__lebel">Имя:*</span>
+            <input class="field-text__input" name="yourname" type="text" placeholder="БАРСИК" required>
+          </label>
+        </div>
+        <div class="cat-form__data">
+          <label class="field-number">
+            <span class="field-number__lebel">Вес (кг):*</span>
+            <input class="field-number__input" name="weight" type="number" value="7" max="20" step="0.1" required>
+          </label>
+        </div>
+        <div class="cat-form__data">
+          <label class="field-number">
+            <span class="field-number__lebel">Возраст (лет):</span>
+            <input class="field-number__input" name="age" type="number" value="7" required>
+          </label>
+        </div>
+      </fieldset>
 
-    <fieldset class="cat-form__radio">
-      <label class="field-radio">
-        <span class="field-radio__label">Похудение</span>
-        <input class="field-radio__input" type="radio" name="goal" value="skinny" checked>
-      </label>
+      <fieldset class="cat-form__radio">
+        <label class="field-radio">
+          <span class="field-radio__label">Похудение</span>
+          <input class="field-radio__input" type="radio" name="goal" value="skinny" checked>
+        </label>
 
-      <label class="field-radio">
-        <span class="field-radio__label">Набор массы</span>
-        <input class="field-radio__input" type="radio" name="goal" value="power">
-      </label>
+        <label class="field-radio">
+          <span class="field-radio__label">Набор массы</span>
+          <input class="field-radio__input" type="radio" name="goal" value="power">
+        </label>
 
-      <label class="field-radio">
-        <span class="field-radio__label">Не знаю (Нужен ваш совет)</span>
-        <input class="field-radio__input" type="radio" name="goal" value="uncertainty">
-      </label>
-    </fieldset>
+        <label class="field-radio">
+          <span class="field-radio__label">Не знаю (Нужен ваш совет)</span>
+          <input class="field-radio__input" type="radio" name="goal" value="uncertainty">
+        </label>
+      </fieldset>
 
       <fieldset class="cat-form__client">
         <legend class="cat-form__title">Контактные данные
           (владельца кота)</legend>
         <div class="cat-form__data">
-          <label class="field-text" >
+          <label class="field-text">
             <span class="field-text__lebel">E-mail:*</span>
             <input class="field-text__input" name="email" type="email" placeholder="kuklachev@gmail.com" required>
           </label>
@@ -95,40 +95,40 @@
       <fieldset class="cat-form__comments">
         <h2 class="cat-form__title">Комментарий</h2>
         <div class="comment-area">
-          <textarea lass="comment-area___text" rows="10" cols="45" name="text"
+          <textarea class="comment-area___text" rows="10" cols="45" name="text"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </fieldset>
 
       <fieldset class="cat-form__checkbox">
-        <legend class="cat-form__title">Дополнительно</h2>
-          <div class="cat-form__data">
-            <label class="field-checkbox" >
-              <span class="field-checkbox__lebel">Сахарозаменитель </span>
-        <input class="field-checkbox__input" type="checkbox"  name="addme" value="anti-shugar" checked>
-      </label>
-      </div>
+        <legend class="cat-form__title">Дополнительно</legend>
+        <div class="cat-form__data">
+          <label class="field-checkbox">
+            <span class="field-checkbox__lebel">Сахарозаменитель </span>
+            <input class="field-checkbox__input" type="checkbox" name="addme" value="anti-shugar" checked>
+          </label>
+        </div>
 
-      <div class="cat-form__data">
-        <label class="field-checkbox">]
-          <span class="field-checkbox__lebel">Питьевая вода </span>
-        <input class="field-checkbox__input" type="checkbox" name="addme" value="water">
-      </label>
-      </div>
+        <div class="cat-form__data">
+          <label class="field-checkbox">]
+            <span class="field-checkbox__lebel">Питьевая вода </span>
+            <input class="field-checkbox__input" type="checkbox" name="addme" value="water">
+          </label>
+        </div>
 
         <div class="cat-form__data">
           <label>
             <span class="field-checkbox__lebel">Молоко</span>
-        <input class="field-checkbox__input" type="checkbox" name="addme" value="milk">
-      </label>
-      </div>
+            <input class="field-checkbox__input" type="checkbox" name="addme" value="milk">
+          </label>
+        </div>
 
         <div class="cat-form__data">
           <label>
             <span class="field-checkbox__lebel">Витамины</span>
-        <input class="field-checkbox__input" type="checkbox"  name="addme" value="vitamins">
-      </label>
-      </div>
+            <input class="field-checkbox__input" type="checkbox" name="addme" value="vitamins">
+          </label>
+        </div>
       </fieldset>
       <input class="button" type="submit" value="Отправить заявку">
 
@@ -137,13 +137,13 @@
 
     <section class="cooperation">
       <div class="cooperation__wrapper">
-          <div class="cooperation__inner">
-            <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
-            <div class="cooperation__adress">
-              <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8</p>
-              <p class="cooperation__city">Санкт-Петербург</p>
-            </div>
+        <div class="cooperation__inner">
+          <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <div class="cooperation__adress">
+            <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="cooperation__city">Санкт-Петербург</p>
           </div>
+        </div>
       </div>
       <div class="cooperation__map">
         <iframe
