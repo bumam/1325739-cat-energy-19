@@ -8,20 +8,28 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
-gulp.task("css", function () {
-  return gulp.src("source/sass/style.scss")
+const imagemin = require("gulp-imagemin");
+
+gulp.task("css", function() {
+  return gulp
+    .src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
+    .pipe(postcss([autoprefixer()]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
-gulp.task("server", function () {
+gulp.task("image-min", () => {
+  return gulp
+    .src("source/img/**/*.svg")
+    .pipe(imagemin([imagemin.svgo()]))
+    .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("server", function() {
   server.init({
     server: "source/",
     notify: false,

@@ -1,0 +1,6 @@
+@mixin font-osw($size-fnt) {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: $size-fnt;
+}

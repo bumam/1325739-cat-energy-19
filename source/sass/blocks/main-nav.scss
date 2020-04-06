@@ -1,0 +1,90 @@
+.main-nav__btn {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.main-nav__btn span {
+  position: absolute;
+  top: 21px;
+  left: 26px;
+  width: 25px;
+  height: 2.5px;
+  background-color: #222222;
+}
+.main-nav__btn span::before,
+.main-nav__btn span::after {
+  position: absolute;
+
+  width: 25px;
+  height: 2.5px;
+  background-color: #222222;
+}
+
+.main-nav__btn span::before,
+.main-nav__btn span::after {
+  content: "";
+  display: block;
+  transition: 0.15s;
+}
+
+.main-nav__btn span::before {
+  transform: translateY(-8px);
+}
+
+.main-nav__btn span::after {
+  transform: translateY(8px);
+}
+
+.main-nav__btn-active span::before {
+  transform: rotate(-45deg);
+}
+
+.main-nav__btn-active span::after {
+  transform: rotate(45deg);
+}
+
+.main-nav__btn-active span {
+  height: 0px;
+}
+
+.main-nav__wrapper-module {
+  display: flex;
+  position: relative;
+}
+
+.main-nav__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.main-nav__item {
+  min-height: 65px;
+  width: 320px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #cdcdcd;
+  align-items: center;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+}
+.main-nav__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $black-tree;
+  min-width: 200px;
+  text-align: center;
+}
+
+.main-nav__js {
+  display: none;
+}

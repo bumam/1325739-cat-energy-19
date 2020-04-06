@@ -1,0 +1,92 @@
+.social {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 57px;
+  border-top: 1px solid $light-gray;
+  border-bottom: 1px solid $light-gray;
+  margin-top: 26px;
+  padding-top: 7px;
+  margin-left: -4px;
+}
+
+.social__item {
+  &:nth-child(2) {
+    padding-right: 40px;
+    padding-left: 36px;
+  }
+}
+
+.social__link-vk::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-vk.png");
+  background-size: 22px 12px;
+  width: 22px;
+  height: 12px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-top: -7px;
+  margin-left: -25px;
+}
+
+.social__link-vk:active::before {
+  opacity: 0.3;
+}
+
+.social__link-vk:hover::before {
+  background-image: url("../img/icon-vk-hover.png");
+  background-size: 22px 12px;
+  background-repeat: no-repeat;
+}
+
+.social__link-insta::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-insta.png");
+  background-size: 17px 17px;
+  width: 17px;
+  height: 17px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-top: -9px;
+  margin-left: -2px;
+}
+.social__link-insta:active::before {
+  opacity: 0.3;
+}
+
+.social__link-insta:hover::before {
+  background-image: url("../img/icon-insta-hover.png");
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+}
+
+.social__link-fb::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-fb.png");
+  background-size: 10px 19px;
+  width: 10px;
+  height: 19px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-top: -11px;
+  margin-left: 15px;
+}
+
+.social__link-fb:hover::before {
+  background-image: url("../img/icon-fb-hover.png");
+  background-size: 10px 19px;
+  background-repeat: no-repeat;
+}
+
+.social__link-fb:active::before {
+  opacity: 0.3;
+}

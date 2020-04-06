@@ -1,0 +1,37 @@
+.field-text__lebel,
+.field-number__lebel {
+  @include font-osw(16px);
+  margin-right: 12px;
+  color: $black-tree;
+}
+
+.field-text input,
+.field-number input {
+  height: 41px;
+  width: auto;
+  padding-left: 11px;
+}
+
+.field-text__input,
+.field-number__input {
+  margin: 0;
+  @include font-osw(16px);
+  color: $black-brown;
+}
+.field-text {
+  display: block;
+  width: 280px;
+}
+
+.field-radio__label {
+  @include font-osw(16px);
+  color: $black-brown;
+}
+.field-radio {
+  width: 100%;
+}
+
+.field-checkbox__lebel {
+  @include font-osw(16px);
+  color: $black-brown;
+}

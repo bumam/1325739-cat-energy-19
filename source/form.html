@@ -1,170 +1,306 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Кэт энерджи</title>
-</head>
-
-<body>
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logo-mobile-header-svg.png" width="191" height="39"
-        alt="Кэт-энержи">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__btn" type="button">
-        <span>Открыть или закрыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link">подбор программы</a>
-          </li>
-        </ul>
+  <body class="body-size">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img
+          class="page-header__logo-image"
+          src="img/logo-mobile.svg"
+          width="191"
+          height="39"
+          alt="Кэт-энержи"
+        />
+      </a>
+      <nav class="main-nav">
+        <a class="main-nav__btn" href="#">
+          <span></span>
+        </a>
+      </nav>
+      <div class="main-nav__js-open">
+        <div class="main-nav__wrapper-module">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html"
+                >Каталог продукции</a
+              >
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">подбор программы</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </nav>
-  </header>
+    </header>
 
-  <main class="page-main">
-    <form class="cat-form" action="https://echo.htmlacademy.ru" method="post">
-      <h1 class="cat-form__header">Подбор программы</h1>
-      <h2 class="cat-form__text">Заполните анкету и мы подберем
-        программу питания для вашего кота</h2>
-      <fieldset class="cat-form__block">
-        <div class="cat-form__data">
-          <label class="field-text">
-            <span class="field-text__lebel">Имя:*</span>
-            <input class="field-text__input" name="yourname" type="text" placeholder="БАРСИК" required>
+    <main class="page-main">
+      <form class="cat-form" action="https://echo.htmlacademy.ru" method="post">
+        <h1 class="cat-form__header">Подбор программы</h1>
+        <h2 class="cat-form__text">
+          Заполните анкету и мы подберем <br> программу питания для вашего кота
+        </h2>
+        <fieldset class="cat-form__block">
+          <div class="cat-form__data">
+            <label class="field-text">
+              <span class="field-text__lebel">Имя:*</span>
+              <input
+                class="field-text__input"
+                name="yourname"
+                type="text"
+                placeholder="БАРСИК"
+                required
+              />
+            </label>
+          </div>
+          <div class="cat-form__data">
+            <label class="field-number">
+              <span class="field-number__lebel">Вес (кг):*</span>
+              <input
+                class="field-number__input"
+                name="weight"
+                type="number"
+                value="7"
+                max="20"
+                step="0.1"
+                required
+              />
+            </label>
+          </div>
+          <div class="cat-form__data">
+            <label class="field-number">
+              <span class="field-number__lebel">Возраст (лет):</span>
+              <input
+                class="field-number__input"
+                name="age"
+                type="number"
+                value="7"
+                required
+              />
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="cat-form__radio">
+          <div class="cat-form__radio-wrapper">
+          <label class="field-radio">
+            <span class="field-radio__label">Похудение</span>
+            <input
+              class="field-radio__input"
+              type="radio"
+              name="goal"
+              value="skinny"
+              checked
+            />
           </label>
-        </div>
-        <div class="cat-form__data">
-          <label class="field-number">
-            <span class="field-number__lebel">Вес (кг):*</span>
-            <input class="field-number__input" name="weight" type="number" value="7" max="20" step="0.1" required>
+
+          <label class="field-radio">
+            <span class="field-radio__label">Набор массы</span>
+            <input
+              class="field-radio__input"
+              type="radio"
+              name="goal"
+              value="power"
+            />
           </label>
-        </div>
-        <div class="cat-form__data">
-          <label class="field-number">
-            <span class="field-number__lebel">Возраст (лет):</span>
-            <input class="field-number__input" name="age" type="number" value="7" required>
+
+          <label class="field-radio">
+            <span class="field-radio__label">Не знаю (Нужен ваш совет)</span>
+            <input
+              class="field-radio__input"
+              type="radio"
+              name="goal"
+              value="uncertainty"
+            />
           </label>
-        </div>
-      </fieldset>
+          </div>
+        </fieldset>
 
-      <fieldset class="cat-form__radio">
-        <label class="field-radio">
-          <span class="field-radio__label">Похудение</span>
-          <input class="field-radio__input" type="radio" name="goal" value="skinny" checked>
-        </label>
+        <fieldset class="cat-form__client">
+          <legend class="cat-form__title">
+            Контактные данные (владельца кота)
+          </legend>
+          <div class="cat-form__data">
+            <label class="field-text">
+              <span class="field-text__lebel">E-mail:*</span>
+              <input
+                class="field-text__input"
+                name="email"
+                type="email"
+                placeholder="kuklachev@gmail.com"
+                required
+              />
+            </label>
+          </div>
+          <div class="cat-form__data">
+            <label class="field-number">
+              <span class="field-number__lebel">Телефон:*</span>
+              <input
+                class="field-number__input"
+                name="phone"
+                type="tel"
+                placeholder="8 (960) 900-60-90"
+                required
+              />
+            </label>
+          </div>
+        </fieldset>
 
-        <label class="field-radio">
-          <span class="field-radio__label">Набор массы</span>
-          <input class="field-radio__input" type="radio" name="goal" value="power">
-        </label>
+        <fieldset class="cat-form__comments">
+          <h2 class="cat-form__title">Комментарий</h2>
+          <div class="comment-area">
+            <textarea
+              class="comment-area___text"
+              rows="10"
+              cols="45"
+              name="text"
+              placeholder="Расскажите обо всех повадках кота"
+            ></textarea>
+          </div>
+        </fieldset>
 
-        <label class="field-radio">
-          <span class="field-radio__label">Не знаю (Нужен ваш совет)</span>
-          <input class="field-radio__input" type="radio" name="goal" value="uncertainty">
-        </label>
-      </fieldset>
+        <fieldset class="cat-form__checkbox">
+          <legend class="cat-form__title">Дополнительно</legend>
+          <div class="cat-form__data">
+            <label class="field-checkbox">
+              <span class="field-checkbox__lebel">Сахарозаменитель </span>
+              <input
+                class="field-checkbox__input"
+                type="checkbox"
+                name="addme"
+                value="anti-shugar"
+                checked
+              />
+            </label>
+          </div>
 
-      <fieldset class="cat-form__client">
-        <legend class="cat-form__title">Контактные данные
-          (владельца кота)</legend>
-        <div class="cat-form__data">
-          <label class="field-text">
-            <span class="field-text__lebel">E-mail:*</span>
-            <input class="field-text__input" name="email" type="email" placeholder="kuklachev@gmail.com" required>
-          </label>
-        </div>
-        <div class="cat-form__data">
-          <label class="field-number">
-            <span class="field-number__lebel">Телефон:*</span>
-            <input class="field-number__input" name="phone" type="tel" placeholder="8 (960) 900-60-90" required>
-          </label>
-        </div>
-      </fieldset>
+          <div class="cat-form__data">
+            <label class="field-checkbox"></label>
+              <span class="field-checkbox__lebel">Питьевая вода </span>
+              <input
+                class="field-checkbox__input"
+                type="checkbox"
+                name="addme"
+                value="water"
+              />
+            </label>
+          </div>
 
-      <fieldset class="cat-form__comments">
-        <h2 class="cat-form__title">Комментарий</h2>
-        <div class="comment-area">
-          <textarea class="comment-area___text" rows="10" cols="45" name="text"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
-        </div>
-      </fieldset>
+          <div class="cat-form__data">
+            <label class="field-checkbox">
+              <span class="field-checkbox__lebel">Молоко</span>
+              <input
+                class="field-checkbox__input"
+                type="checkbox"
+                name="addme"
+                value="milk"
+              />
+            </label>
+          </div>
 
-      <fieldset class="cat-form__checkbox">
-        <legend class="cat-form__title">Дополнительно</legend>
-        <div class="cat-form__data">
-          <label class="field-checkbox">
-            <span class="field-checkbox__lebel">Сахарозаменитель </span>
-            <input class="field-checkbox__input" type="checkbox" name="addme" value="anti-shugar" checked>
-          </label>
-        </div>
+          <div class="cat-form__data">
+            <label class="field-checkbox">
+              <span class="field-checkbox__lebel">Витамины</span>
+              <input
+                class="field-checkbox__input"
+                type="checkbox"
+                name="addme"
+                value="vitamins"
+              />
+            </label>
+          </div>
+        </fieldset>
+        <input  class="button button__required" type="submit" value="Отправить заявку" />
 
-        <div class="cat-form__data">
-          <label class="field-checkbox">]
-            <span class="field-checkbox__lebel">Питьевая вода </span>
-            <input class="field-checkbox__input" type="checkbox" name="addme" value="water">
-          </label>
-        </div>
+        <p class="cat-form__required">* — Обязательные поля</p>
+      </form>
 
-        <div class="cat-form__data">
-          <label>
-            <span class="field-checkbox__lebel">Молоко</span>
-            <input class="field-checkbox__input" type="checkbox" name="addme" value="milk">
-          </label>
-        </div>
-
-        <div class="cat-form__data">
-          <label>
-            <span class="field-checkbox__lebel">Витамины</span>
-            <input class="field-checkbox__input" type="checkbox" name="addme" value="vitamins">
-          </label>
-        </div>
-      </fieldset>
-      <input class="button" type="submit" value="Отправить заявку">
-
-      <p class="cat-form__required">* — Обязательные поля</p>
-    </form>
-
-    <section class="cooperation">
-      <div class="cooperation__wrapper">
-        <div class="cooperation__inner">
-          <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <div class="cooperation__adress">
-            <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="cooperation__city">Санкт-Петербург</p>
+      <section class="cooperation">
+        <div class="cooperation__wrapper cooperation__wrapper--gray">
+          <div class="cooperation__inner">
+            <h2 class="cooperation__title">
+              Приглашаем <br />
+              к сотрудничеству дилеров!
+            </h2>
+            <div class="cooperation__adress">
+              <p class="cooperation__street">
+                ул. Большая Конюшенная, д. 19/8
+              </p>
+              <p class="cooperation__city">Санкт-Петербург</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="cooperation__map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585672796649!5m2!1sru!2sru"
-          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0"></iframe>
-      </div>
-    </section>
-  </main>
+        <div class="map" id="map" style="height:365px"></div>
+      </section>
+    </main>
 
-  <footer class="footer-page">
-    <a class="footer-page__logo">
-      <img class="footer-page__logo-image" src="img/footer-logo-svg.png" width="128" height="24" alt="Кэт-энержи">
-    </a>
-    <ul class="social">
-      <li class="social__item"><a class="social__link"><img src="#" class="social__icon">VK</a></li>
-      <li class="social__item"><a class="social__link"><img src="#" class="social__icon">Instagram</a></li>
-      <li class="social__item"><a class="social__link"><img src="#" class="social__icon">Facebook</a></li>
-    </ul>
-    <a class="footer-page__HTML-Academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-  </footer>
-</body>
+    <footer class="footer-page">
+      <a class="footer-page__logo" href="index.html">
+        <img
+          class="footer-page__logo-image"
+          src="img/footer-logo-svg.png"
+          width="128"
+          height="24"
+          alt="Кэт-энержи"
+        />
+      </a>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link-vk"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link-insta"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link-fb"></a>
+        </li>
+      </ul>
+      <div class="footer-page__HTML-Academy">
+        <a
+          class="footer-page__HTML-link"
+          href="https://htmlacademy.ru/intensive/adaptive"
+          >HTML Academy</a
+        >
+      </div>
+    </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script type="text/javascript">
+      ymaps.ready(init);
 
+      function init() {
+        myMap = new ymaps.Map("map", {
+          center: [59.938631, 30.323055],
+          zoom: 17
+        });
+
+        myMap.behaviors.disable("scrollZoom");
+
+        var myPlacemark = new ymaps.Placemark(
+          [59.938631, 30.323055],
+          {},
+          {
+            iconLayout: "default#image",
+            iconImageHref: "img/map-pin-png-50.png",
+            iconImageSize: [75, 73],
+            iconImageOffset: [-36, -53]
+          }
+        );
+        myMap.geoObjects.add(myPlacemark);
+      }
+    </script>
+    <script>
+      document.querySelector(".main-nav__btn").onclick = function(event) {
+        var nav = document.querySelector(".main-nav__btn");
+        nav.classList.toggle("main-nav__btn-active");
+        event.preventDefault();
+      };
+    </script>
+  </body>
 </html>

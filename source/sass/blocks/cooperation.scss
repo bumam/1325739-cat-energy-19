@@ -1,0 +1,32 @@
+.cooperation__wrapper--gray {
+  background-color: $gray;
+}
+
+.cooperation__inner {
+  display: flex;
+  padding: 27px 20px 25px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.cooperation__title {
+  @include font-osw(16px);
+  color: $black-tree;
+}
+
+.cooperation__street,
+.cooperation__city {
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1.43;
+  color: $black-brown;
+  margin: 0;
+}
+
+.cooperation__title,
+.cooperation__adress {
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 140px;
+}

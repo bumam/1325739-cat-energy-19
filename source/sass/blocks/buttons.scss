@@ -1,0 +1,46 @@
+.button {
+  display: inline-block;
+  vertical-align: top;
+  width: 235px;
+  padding: 10px 23px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: $white;
+  background-color: $green;
+  border: 0;
+  margin-top: 4px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 3px;
+
+  @include font-osw(14px);
+
+  &:hover,
+  &:focus {
+    background-color: $green-darker;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+}
+
+.button__catalog {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 23px;
+
+  @include font-osw(16px);
+
+  &--add {
+    margin-bottom: 18px;
+  }
+}
+
+.button__required {
+  margin-left: 21px;
+  width: 280px;
+  margin-bottom: 7px;
+  font-size: 16px;
+}

@@ -1,0 +1,33 @@
+.gift {
+  text-align: center;
+  padding-top: 39px;
+  border-top: 1px solid $gray-border;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 34px;
+}
+
+.gift__about {
+  width: 166px;
+  height: 56px;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 1.25em;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  margin-top: -106px;
+  margin-left: 56px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 61px;
+    background-image: url("../img/icon-gift.png");
+    background-size: 56px 61px;
+    bottom: 118px;
+    right: 32%;
+  }
+}
