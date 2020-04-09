@@ -1,6 +1,5 @@
 .slider-image {
   position: relative;
-  margin-top: 37px;
   margin-bottom: 33px;
   margin-left: -20px;
   width: 320px;
@@ -25,10 +24,9 @@
 
 .slider__green-range {
   position: absolute;
-  content: "";
   width: 35px;
   height: 6px;
-  background-color: $green;
+  background-color: $btn-color;
   border-radius: 3px;
   left: 6px;
   top: 3px;
@@ -37,8 +35,8 @@
 .slider__range-wrapper {
   width: 83px;
   height: 12px;
-  border: 1px solid #cdcdcd;
-  background-color: #fff;
+  border: 1px solid $dark-border;
+  background-color: white;
   border-radius: 6px;
   margin-left: 20px;
   margin-right: 20px;

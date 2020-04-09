@@ -1,57 +1,69 @@
-.main-nav__btn {
+.main-nav__btn,
+.main-nav__btn--active {
   display: block;
   width: 50px;
   height: 50px;
-  position: relative;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  left: 261px;
+  top: 6px;
+  cursor: pointer;
 }
 
 .main-nav__btn span {
-  position: absolute;
-  top: 21px;
-  left: 26px;
-  width: 25px;
   height: 2.5px;
-  background-color: #222222;
-}
-.main-nav__btn span::before,
-.main-nav__btn span::after {
   position: absolute;
-
+  left: 15px;
   width: 25px;
-  height: 2.5px;
   background-color: #222222;
-}
-
-.main-nav__btn span::before,
-.main-nav__btn span::after {
-  content: "";
-  display: block;
-  transition: 0.15s;
 }
 
 .main-nav__btn span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 2.5px;
+  background-color: #222222;
   transform: translateY(-8px);
+  transition: 0.15s;
 }
 
 .main-nav__btn span::after {
+  position: absolute;
+  width: 25px;
+  height: 2.5px;
+  background-color: #222222;
+  display: block;
+  content: "";
   transform: translateY(8px);
+  transition: 0.15s;
 }
 
-.main-nav__btn-active span::before {
+.main-nav__btn--active span {
+  position: absolute;
+  left: 15px;
+  width: 25px;
+  height: 0;
+  background-color: #222222;
+}
+
+.main-nav__btn--active span::before {
   transform: rotate(-45deg);
+
+  transition: 0.15s;
 }
 
-.main-nav__btn-active span::after {
+.main-nav__btn--active span::after {
   transform: rotate(45deg);
-}
 
-.main-nav__btn-active span {
-  height: 0px;
+  transition: 0.15s;
 }
 
 .main-nav__wrapper-module {
-  display: flex;
   position: relative;
+  display: none;
 }
 
 .main-nav__list {
@@ -67,24 +79,33 @@
   width: 320px;
   display: flex;
   justify-content: space-around;
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $light-border;
   align-items: center;
 
   &:first-child {
-    border-top: 1px solid #cdcdcd;
+    border-top: 1px solid $light-border;
+  }
+
+  &:nth-child(3) {
+    border-bottom: none;
   }
 }
+
 .main-nav__link {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
-  color: $black-tree;
+  color: $header;
   min-width: 200px;
   text-align: center;
 }
 
-.main-nav__js {
-  display: none;
+.main-nav {
+  &--open {
+    .main-nav__wrapper-module {
+      display: block;
+    }
+  }
 }

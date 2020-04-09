@@ -1,49 +1,63 @@
 .show-more {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 210px;
+}
+
+.show-more__wrapper {
   padding-left: 20px;
   padding-right: 20px;
-  min-height: 210px;
   flex-wrap: wrap;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+  padding-top: 82px;
+  text-align: center;
+  padding-bottom: 32px;
 }
+
 .show-more__header {
   @include font-osw(16px);
-  color: $black-tree;
-  margin-top: 64px;
+  color: $header;
+  margin: 0;
+  margin-bottom: 11px;
+  padding: 0;
 }
+
 .show-more__text {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
-  color: $black-brown;
-  margin-top: -60px;
+  color: $text-color;
+  margin: 0;
+  margin-bottom: 32px;
 }
+
 .show-more__button {
   @include font-osw(16px);
   background-color: $gray;
-  padding: 10px;
+  padding: 9px 94px;
   width: 100%;
   text-decoration: none;
-  color: $black-brown;
-  margin-top: -50px;
+  color: $text-color;
   text-align: center;
 }
 
-.show-more::before {
+.show-more__header::before {
+  box-sizing: inherit;
   content: "";
   position: absolute;
   width: 31px;
-  border: 1px solid #ededed;
-  background-color: #ededed;
-  margin-top: -62px;
+  border: 1px solid $light-border;
+  background-color: $light-border;
+  margin-top: -40px;
+  margin-left: 86px;
 }
 
-.show-more::after {
+.show-more__header::after {
+  box-sizing: inherit;
   content: "";
   position: absolute;
   width: 31px;
-  border: 1px solid #ededed;
-  background-color: #ededed;
+  border: 1px solid $light-border;
+  background-color: $light-border;
   transform: rotate(90deg);
-  margin-top: -62px;
+  margin-top: -40px;
+  margin-left: -118px;
 }

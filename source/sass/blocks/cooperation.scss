@@ -4,28 +4,32 @@
 
 .cooperation__inner {
   display: flex;
-  padding: 27px 20px 25px;
+  padding: 30px 19px 25px;
   box-sizing: border-box;
   justify-content: space-between;
 }
 
 .cooperation__title {
   @include font-osw(16px);
-  color: $black-tree;
+  color: $header;
+  line-height: 1.3;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 140px;
 }
 
 .cooperation__street,
 .cooperation__city {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
-  line-height: 1.43;
-  color: $black-brown;
+  line-height: 1.3;
+  color: $text-color;
   margin: 0;
 }
 
-.cooperation__title,
-.cooperation__adress {
-  line-height: 20px;
+.cooperation__adress,
+.cooperation__street {
+  line-height: 1.47;
   margin-top: 0;
   margin-bottom: 0;
   width: 140px;

@@ -1,0 +1,82 @@
+.field-text__lebel {
+  @include font-osw(16px);
+  margin-right: 12px;
+  color: $header;
+
+  &--email {
+    margin-right: 8px;
+  }
+
+  &--tel {
+    margin-right: 6px;
+  }
+}
+
+.field-text input {
+  height: 41px;
+  padding-left: 14px;
+  border: 1px solid $light-border;
+}
+
+.field-text--nameinput input {
+  padding-left: 12px;
+}
+
+.field-text__input {
+  margin: 0;
+
+  @include font-osw(16px);
+  color: $text-color;
+
+  &--name {
+    width: 212px;
+  }
+
+  &--age {
+    width: 154px;
+  }
+
+  &--weight {
+    width: 188px;
+  }
+
+  &--email {
+    width: 202px;
+  }
+
+  &--tel {
+    width: 187px;
+  }
+}
+
+.field-text {
+  display: block;
+  width: 280px;
+  margin-bottom: 14px;
+}
+
+.field-text__lebel--email::after {
+  content: "";
+  box-sizing: inherit;
+  position: absolute;
+  background-image: url("../img/icon-mail.svg");
+  background-size: 18px 14px;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 14px;
+  margin-left: 198px;
+  margin-top: 16px;
+}
+
+.field-text__lebel--tel::after {
+  content: "";
+  box-sizing: inherit;
+  position: absolute;
+  background-image: url("../img/icon-phone.svg");
+  background-size: 21px 21px;
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 21px;
+  margin-left: 180px;
+  margin-top: 12px;
+}

@@ -1,9 +1,15 @@
 .product-catalog__header {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
-  color: $black-tree;
+  color: $header;
   font-weight: 400;
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 37px;
+  margin-top: 0;
+}
+
+.product-catalog {
+  border-top: 1px solid $border;
+  padding-top: 23px;
 }
