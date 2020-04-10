@@ -1,0 +1,18 @@
+.field-checkbox__lebel {
+  @include font-osw(16px);
+  color: $text-color;
+}
+
+.field-checkbox input:checked + .field-checkbox__lebel::after {
+  width: 18px;
+  height: 11px;
+  border-radius: 1px;
+  border-left: 2px solid #68b738;
+  border-bottom: 2px solid #68b738;
+  content: "";
+  display: inline-block;
+  left: -40px;
+  bottom: 9px;
+  transform: rotate(-48deg);
+  position: absolute;
+}

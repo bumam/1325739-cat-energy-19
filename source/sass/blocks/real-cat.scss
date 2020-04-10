@@ -1,0 +1,31 @@
+.real-cat {
+  background-color: $gray;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.real-cat__header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  color: $header;
+  font-weight: 400;
+  margin-bottom: 33px;
+}
+
+.real-cat__description {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  color: $text-color;
+  line-height: 1.3;
+  width: 95%;
+  margin-bottom: 25px;
+}
+
+.real-cat__spending {
+  @include font-osw(14px);
+  text-align: center;
+  margin: 0;
+  margin-bottom: 37px;
+  margin-top: -3px;
+}

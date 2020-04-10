@@ -1,0 +1,115 @@
+.program-description__block {
+  position: relative;
+  background-color: $gray;
+  margin-right: 20px;
+  margin-left: 20px;
+  flex-direction: row;
+  padding-top: 24px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 22px;
+  margin-top: 20px;
+}
+
+.program-description__inner::before {
+  box-sizing: inherit;
+  content: "";
+  position: absolute;
+  height: 50px;
+  top: 24px;
+  left: 22px;
+  width: 50px;
+  background-color: $btn-color;
+  border-radius: 50%;
+}
+
+.program-description__header {
+  position: relative;
+  margin: 0;
+  padding: 6px 0;
+  font-weight: 400;
+  line-height: 1.54;
+  color: $header;
+  padding-left: 71px;
+  margin-bottom: 24px;
+
+  @include font-osw(24px);
+}
+
+.program-description__header-slim::before {
+  box-sizing: inherit;
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 50px;
+  top: -2px;
+  left: 10px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-size: 100% auto;
+}
+
+.program-description__header-pro::before {
+  box-sizing: inherit;
+  content: "";
+  position: absolute;
+  width: 67px;
+  height: 28px;
+  top: 11px;
+  left: -2px;
+  margin-left: -5px;
+  background-size: 100% auto;
+  background-image: url("../img/icon-cat-pro.svg");
+}
+
+.program-description__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  color: $text-color;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 19px;
+  border-bottom: 1px solid $border;
+  padding-bottom: 22px;
+}
+
+.program-description__more {
+  width: 100%;
+  line-height: 1;
+
+  @include font-osw(16px);
+}
+
+.program-description__link {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  color: $header;
+  margin-top: 0;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    box-sizing: inherit;
+    content: "";
+    position: absolute;
+    display: block;
+    top: 3px;
+    right: -36px;
+    width: 24px;
+    height: 11px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 11px;
+    background-position: right center;
+    transition: all 0.3s ease;
+  }
+
+  &:hover::after {
+    right: -45px;
+    width: 32px;
+  }
+}

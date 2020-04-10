@@ -1,0 +1,17 @@
+.comment-area___text {
+  @include font-osw(16px);
+  color: $text-color;
+  padding: 13px;
+  padding-left: 15px;
+  padding-right: 12px;
+  resize: vertical;
+  border: solid 1px $dark-border;
+  box-sizing: border-box;
+  width: 280px;
+  height: 150px;
+}
+
+.comment-area {
+  width: 280px;
+  height: 150px;
+}

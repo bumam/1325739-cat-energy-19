@@ -1,0 +1,31 @@
+.visually-hidden {
+  display: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main {
+  flex: 1 0 auto;
+  width: 320px;
+}
+
+.page-header,
+.footer-page {
+  width: 320px;
+}
+
+footer {
+  flex: 0 0 auto;
+}
+
+html {
+  box-sizing: border-box;
+}

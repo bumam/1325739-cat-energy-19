@@ -1,0 +1,72 @@
+.social {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  height: 57px;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+  padding-top: 5px;
+  margin-top: 0;
+  margin-left: -4px;
+  margin-bottom: 30px;
+  padding-left: 81px;
+  padding-right: 81px;
+}
+
+.social__item-icon {
+  &:hover {
+    fill: $btn-color;
+  }
+
+  &:active {
+    fill: $btn-color;
+  }
+
+  &:focus {
+    fill: $btn-color;
+  }
+}
+
+.social__link {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4px;
+  cursor: pointer;
+
+  &--vk {
+    padding-right: 32px;
+    margin-left: -6px;
+  }
+
+  &--fb {
+    padding-left: 41px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__link--catalog {
+  &-vk {
+    margin-left: -10px;
+    padding-left: 0;
+    padding-right: 35px;
+  }
+
+  &-fb {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  &-insta {
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 35px;
+  }
+}
