@@ -1,9 +1,36 @@
-.page-header {
+.page-header__wrapper {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 30px;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 109px;
+    padding-right: 110px;
+  }
 }
 
 .page-header__logo-image {
   margin-bottom: 12px;
+  width: 191px;
+  height: 39px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 59px;
+  }
+}
+
+.page-header__logo {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 59px;
+  }
 }

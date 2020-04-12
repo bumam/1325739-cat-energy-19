@@ -17,6 +17,10 @@
   left: 15px;
   width: 25px;
   background-color: #222222;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__btn span::before {
@@ -64,6 +68,12 @@
 .main-nav__wrapper-module {
   position: relative;
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 441px;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__list {
@@ -72,6 +82,13 @@
   margin: 0;
   margin-left: -20px;
   margin-right: -20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 440px;
+    justify-content: space-between;
+    margin-left: 1px;
+  }
 }
 
 .main-nav__item {
@@ -84,10 +101,22 @@
 
   &:first-child {
     border-top: 1px solid $light-border;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
   }
 
   &:nth-child(3) {
     border-bottom: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: fit-content;
   }
 }
 
@@ -100,6 +129,12 @@
   color: $header;
   min-width: 200px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    min-width: 0;
+    font-size: 18px;
+    font-weight: normal;
+  }
 }
 
 .main-nav {
@@ -107,5 +142,11 @@
     .main-nav__wrapper-module {
       display: block;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__link--white {
+    color: white;
   }
 }

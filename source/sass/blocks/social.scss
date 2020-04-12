@@ -13,6 +13,17 @@
   margin-bottom: 30px;
   padding-left: 81px;
   padding-right: 81px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    border: none;
+    width: 124px;
+    justify-content: space-between;
+    margin-left: 19px;
+    margin-top: -2px;
+  }
 }
 
 .social__item-icon {
@@ -38,13 +49,27 @@
   padding-left: 4px;
   cursor: pointer;
 
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
   &--vk {
     padding-right: 32px;
     margin-left: -6px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      margin: 0;
+    }
   }
 
   &--fb {
     padding-left: 41px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      margin: 0;
+    }
   }
 
   &:active {
@@ -68,5 +93,24 @@
     margin-left: 0;
     padding-left: 0;
     padding-right: 35px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__item {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--insta {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
   }
 }

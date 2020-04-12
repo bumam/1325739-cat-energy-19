@@ -1,8 +1,7 @@
 .real-cat {
   background-color: $gray;
   padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
+  padding-top: 52px;
 }
 
 .real-cat__header {
@@ -11,6 +10,7 @@
   color: $header;
   font-weight: 400;
   margin-bottom: 33px;
+  margin-top: 0;
 }
 
 .real-cat__description {

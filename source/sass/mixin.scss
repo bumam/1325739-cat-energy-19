@@ -19,3 +19,13 @@
     overflow: hidden;
   }
 }
+
+@mixin big-numbers($number) {
+  content: $number;
+  position: absolute;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 281px;
+  font-weight: 400;
+  color: #f2f2f2;
+  z-index: -1;
+}

@@ -3,26 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body class="body-size">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img
-          class="page-header__logo-image"
-          src="img/logo-mobile-header-svg.png"
-          width="191"
-          height="39"
-          alt="Кэт-энержи"
-        />
-      </a>
-      <nav class="main-nav main-nav--open">
-        <button class="main-nav__btn">
-          <span></span>
-        </button>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img
+            class="page-header__logo-image"
+            src="img/logo-mobile-header-svg.png"
+            width="191"
+            height="39"
+            alt="Кэт-энержи"
+          />
+        </a>
+        <nav class="main-nav main-nav--open">
+          <button class="main-nav__btn">
+            <span></span>
+          </button>
 
-        <div class="main-nav__js-open">
           <div class="main-nav__wrapper-module">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -38,8 +39,8 @@
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
@@ -351,6 +352,12 @@
     </footer>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="js/map.js"></script>
-    <script src="js/menu.js"></script>
+    <script>
+      if (window.innerWidth < 768) {
+        var script = document.createElement("script");
+        script.src = "js/menu.js";
+        document.head.appendChild(script);
+      }
+    </script>
   </body>
 </html>
