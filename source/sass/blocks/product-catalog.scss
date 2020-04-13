@@ -14,6 +14,10 @@
     padding-left: 30px;
     margin-bottom: 161px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+  }
 }
 
 .product-catalog {
@@ -31,5 +35,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-catalog__wrapper {
+    padding: 0 50px;
   }
 }

@@ -313,5 +313,30 @@
         document.head.appendChild(script);
       }
     </script>
+    <script>
+      window.addEventListener(
+        "orientationchange",
+        function() {
+          if (window.matchMedia("(orientation: portrait)").matches) {
+            // Режим PORTRAIT (книжный)
+            if (window.innerWidth < 768) {
+              var script = document.createElement("script");
+              script.src = "js/menu.js";
+              document.head.appendChild(script);
+            }
+          }
+
+          if (window.matchMedia("(orientation: landscape)").matches) {
+            // режим LANDSCAPE (альбомный)
+            if (window.innerWidth < 1300) {
+              var script = document.createElement("script");
+              script.src = "js/menu.js";
+              document.head.appendChild(script);
+            }
+          }
+        },
+        false
+      );
+    </script>
   </body>
 </html>

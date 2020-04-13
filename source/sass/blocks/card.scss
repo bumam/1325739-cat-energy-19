@@ -18,6 +18,10 @@
     padding-left: 21px;
     justify-content: center;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+  }
 }
 
 .card__title {
