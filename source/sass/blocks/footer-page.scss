@@ -1,5 +1,8 @@
 .footer-page {
   background-color: $gray;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .footer-page__wrapper {
@@ -8,14 +11,17 @@
   padding-right: 20px;
   padding-top: 23px;
   padding-bottom: 20px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     padding-left: 34px;
-    padding-right: 60px;
-    padding-top: 68px;
-    padding-bottom: 55px;
+    padding-right: 33px;
+    padding-top: 55px;
+    padding-bottom: 47px;
+    align-items: center;
+    text-align: start;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,33 +60,38 @@
   font-size: 16px;
   color: $text-color;
   text-decoration: none;
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.footer-page__HTML-link::after {
-  box-sizing: inherit;
-  content: "";
-  position: absolute;
-  width: 27px;
-  height: 34px;
-  margin-top: -25px;
-  margin-left: 254px;
-  display: block;
-  background-image: url("../img/htmlacademy.png");
-  background-size: 27px 34px;
-  background-repeat: no-repeat;
-  cursor: pointer;
+  width: 250px;
+  text-align: start;
 
   &:active {
     opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: -24px;
-    margin-left: 136px;
+    width: 165px;
+  }
+}
+
+.footer-page__HTML-link::after {
+  box-sizing: inherit;
+  content: "";
+  position: relative;
+  width: 27px;
+  height: 34px;
+  display: block;
+  background-image: url("../img/htmlacademy.png");
+  background-size: 27px 34px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-top: -25px;
+  margin-left: 254px;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 137px;
   }
 }
 

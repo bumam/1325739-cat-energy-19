@@ -9,22 +9,14 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    flex-direction: column;
     width: 324px;
-    height: 431px;
     background-color: $gray;
-    align-items: center;
     padding-top: 0;
     padding-bottom: 20px;
     margin-bottom: 140px;
     box-sizing: border-box;
     padding-left: 21px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .card:nth-child(7) {
-    margin-bottom: 0;
+    justify-content: center;
   }
 }
 
@@ -94,7 +86,6 @@
     flex-wrap: wrap;
     padding-top: 0;
     flex-grow: 0;
-    margin-top: -18px;
   }
 }
 
@@ -117,14 +108,13 @@
   margin-bottom: 1px;
 }
 
-.card__add {
+.card--add {
   padding: 0;
   padding-top: 12px;
 
   @media (min-width: $tablet-width) {
     display: block;
     margin: 0;
-    height: 139px;
     width: 100%;
     border-top: 1px solid #d9d9d9;
     background-color: white;

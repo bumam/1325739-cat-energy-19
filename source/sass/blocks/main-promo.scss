@@ -13,7 +13,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 }
 
@@ -38,7 +38,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 194px;
+    padding-left: 124px;
+    padding-top: 114px;
   }
 }
 
@@ -60,7 +61,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
-    margin-left: -100px;
+    padding-right: 0;
   }
 }
 
@@ -81,7 +82,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 194px;
+    padding-left: 124px;
   }
 }
 
@@ -96,20 +97,21 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 176px;
+    top: 447px;
+    right: 910px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-promo__image-wrapper::after {
+  .main-promo__wrapper::before {
     content: "";
     z-index: -1;
-    background-color: $btn-color;
+    background-color: #68b738;
     width: 720px;
     height: 696px;
     position: absolute;
-    top: 1px;
-    left: 720px;
+    top: -8px;
+    left: 575px;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: 720px 696px;

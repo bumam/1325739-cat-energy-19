@@ -10,7 +10,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    padding: 0 43px;
+    padding-top: 40px;
   }
 }
 
@@ -37,6 +38,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    counter-reset: li;
   }
 }
 
@@ -64,6 +66,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50px 50px;
+
+    @media (min-width: $desktop-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -97,6 +104,7 @@
     margin-right: 84px;
     align-items: flex-start;
     margin-bottom: 87px;
+    flex-direction: column;
   }
 
   @media (min-width: $desktop-width) {
@@ -112,36 +120,28 @@
   margin: auto;
 
   @media (min-width: $tablet-width) {
-    margin-top: 112px;
-    margin-left: -100px;
     font-size: 16px;
     line-height: 1.5;
     margin-right: -6px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .how-it-works__text-1::after {
-    @include big-numbers("1");
+  .how-it-works__text::after {
+    position: absolute;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 281px;
+    font-weight: 400;
+    color: #f2f2f2;
+    z-index: -1;
     top: -110px;
     left: 118px;
-  }
-
-  .how-it-works__text-2::after {
-    @include big-numbers("2");
-    top: -110px;
-    left: 112px;
-  }
-
-  .how-it-works__text-3::after {
-    @include big-numbers("3");
-    top: -110px;
-    left: 113px;
-  }
-
-  .how-it-works__text-4::after {
-    @include big-numbers("4");
-    top: -110px;
-    left: 114px;
+    counter-increment: li;
+    counter-reset: list -1;
+    content: counter(li);
   }
 }
