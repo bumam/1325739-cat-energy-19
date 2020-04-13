@@ -1,9 +1,26 @@
-.page-header {
+.page-header__wrapper {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 11px;
-}
+  min-width: 320px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100%;
 
-.page-header__logo-image {
-  margin-bottom: 12px;
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 24px;
+    width: 100%;
+    min-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+    padding-right: 40px;
+    padding-top: 50px;
+  }
 }

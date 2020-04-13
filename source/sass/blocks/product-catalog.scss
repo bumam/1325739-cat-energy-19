@@ -7,9 +7,39 @@
   padding-right: 20px;
   margin-bottom: 37px;
   margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    padding-top: 26px;
+    padding-left: 30px;
+    margin-bottom: 161px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+  }
 }
 
 .product-catalog {
   border-top: 1px solid $border;
   padding-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product-catalog__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-catalog__wrapper {
+    padding: 0 50px;
+  }
 }

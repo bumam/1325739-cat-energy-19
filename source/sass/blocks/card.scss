@@ -6,6 +6,22 @@
   border-top: 1px solid $border;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    width: 324px;
+    background-color: $gray;
+    padding-top: 0;
+    padding-bottom: 20px;
+    margin-bottom: 140px;
+    box-sizing: border-box;
+    padding-left: 21px;
+    justify-content: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+  }
 }
 
 .card__title {
@@ -19,6 +35,15 @@
   &--width {
     width: 100%;
     margin-bottom: 8px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    text-align: center;
+    width: 130px;
+    margin: 0 auto;
+    line-height: 1;
+    margin-bottom: 20px;
   }
 }
 
@@ -36,11 +61,36 @@
     font-size: 14px;
     margin-bottom: 13px;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .card__wrapper tr {
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .card__wrapper--add tr {
+    border-bottom: none;
+  }
 }
 
 .card__text-wrapper {
   flex-grow: 1;
   padding-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 250px;
+    flex-wrap: wrap;
+    padding-top: 0;
+    flex-grow: 0;
+  }
 }
 
 .card__cell2 {
@@ -62,7 +112,53 @@
   margin-bottom: 1px;
 }
 
-.card__add {
+.card--add {
   padding: 0;
   padding-top: 12px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid #d9d9d9;
+    background-color: white;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    padding-left: 38px;
+    padding-right: 37px;
+    padding-top: 25px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .card__title--width {
+    width: 160px;
+    margin: 0;
+    text-align: start;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .card__wrapper--add tr {
+    padding: 0;
+    text-align: right;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .card__cell2 {
+    width: 95px;
+  }
+}
+
+.card___position {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 2px;
+    width: 633px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 }

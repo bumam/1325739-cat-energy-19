@@ -20,6 +20,13 @@
   &:active {
     color: rgba(white, 0.3);
   }
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    font-size: 20px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+  }
 }
 
 .button--catalog {
@@ -30,10 +37,18 @@
   padding-bottom: 10px;
 
   @include font-osw(16px);
+
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
 }
 
 .button--add {
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .button--validate {

@@ -1,23 +1,53 @@
 .footer-page {
   background-color: $gray;
-  min-height: 237px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .footer-page__wrapper {
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 36px;
+  padding-top: 23px;
+  padding-bottom: 20px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 34px;
+    padding-right: 33px;
+    padding-top: 55px;
+    padding-bottom: 47px;
+    align-items: center;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 109px;
+    padding-right: 110px;
+  }
 }
 
 .footer-page__logo {
   margin: 0 auto;
   padding-bottom: 40px;
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .footer-page__logo-image {
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .footer-page__HTML-Academy {
@@ -30,28 +60,38 @@
   font-size: 16px;
   color: $text-color;
   text-decoration: none;
+  width: 250px;
+  text-align: start;
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 165px;
   }
 }
 
 .footer-page__HTML-link::after {
   box-sizing: inherit;
   content: "";
-  position: absolute;
+  position: relative;
   width: 27px;
   height: 34px;
-  margin-top: -25px;
-  margin-left: 254px;
   display: block;
   background-image: url("../img/htmlacademy.png");
   background-size: 27px 34px;
   background-repeat: no-repeat;
   cursor: pointer;
+  margin-top: -25px;
+  margin-left: 254px;
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 137px;
   }
 }
 
