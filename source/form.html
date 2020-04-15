@@ -53,123 +53,127 @@
             Заполните анкету и мы подберем <br />
             программу питания для вашего кота
           </h2>
-          <fieldset class="cat-form__block">
-            <div class="cat-form__block-wrapper">
-              <div class="cat-form__data">
-                <label class="field-text field-text--nameinput">
-                  <span class="field-text__lebel">Имя:*</span>
-                  <input
-                    class="field-text__input field-text__input--name"
-                    name="yourname"
-                    type="text"
-                    placeholder="БАРСИК"
-                    required
-                  />
-                </label>
+          <div class="cat-form__block-radio-wrpapper">
+            <fieldset class="cat-form__block">
+              <div class="cat-form__block-wrapper">
+                <div class="cat-form__data">
+                  <label class="field-text field-text--nameinput">
+                    <span class="field-text__lebel">Имя:*</span>
+                    <input
+                      class="field-text__input field-text__input--name"
+                      name="yourname"
+                      type="text"
+                      placeholder="БАРСИК"
+                      required
+                    />
+                  </label>
+                </div>
+                <div class="cat-form__data">
+                  <label class="field-text">
+                    <span class="field-text__lebel">Вес (кг):*</span>
+                    <input
+                      class="field-text__input field-text__input--weight"
+                      name="weight"
+                      type="number"
+                      value="7"
+                      max="20"
+                      step="0.1"
+                      required
+                    />
+                  </label>
+                </div>
+                <div class="cat-form__data">
+                  <label class="field-text">
+                    <span class="field-text__lebel ">Возраст (лет):</span>
+                    <input
+                      class="field-text__input field-text__input--age"
+                      name="age"
+                      type="number"
+                      value="7"
+                      required
+                    />
+                  </label>
+                </div>
               </div>
-              <div class="cat-form__data">
-                <label class="field-text">
-                  <span class="field-text__lebel">Вес (кг):*</span>
-                  <input
-                    class="field-text__input field-text__input--weight"
-                    name="weight"
-                    type="number"
-                    value="7"
-                    max="20"
-                    step="0.1"
-                    required
-                  />
-                </label>
-              </div>
-              <div class="cat-form__data">
-                <label class="field-text">
-                  <span class="field-text__lebel ">Возраст (лет):</span>
-                  <input
-                    class="field-text__input field-text__input--age"
-                    name="age"
-                    type="number"
-                    value="7"
-                    required
-                  />
-                </label>
-              </div>
-            </div>
-          </fieldset>
+            </fieldset>
 
-          <fieldset class="cat-form__radio">
-            <div class="cat-form__radio-wrapper">
-              <div class="field-radio__individual">
-                <label class="field-radio">
-                  <input
-                    class="field-radio__input"
-                    type="radio"
-                    name="goal"
-                    value="skinny"
-                    checked
-                  />
-                  <span class="field-radio__label">Похудение</span>
-                </label>
-              </div>
-              <div class="field-radio__individual">
-                <label class="field-radio">
-                  <input
-                    class="field-radio__input"
-                    type="radio"
-                    name="goal"
-                    value="power"
-                  />
-                  <span class="field-radio__label">Набор массы</span>
-                </label>
-              </div>
+            <fieldset class="cat-form__radio">
+              <div class="cat-form__radio-wrapper">
+                <div class="field-radio__individual">
+                  <label class="field-radio">
+                    <input
+                      class="field-radio__input"
+                      type="radio"
+                      name="goal"
+                      value="skinny"
+                      checked
+                    />
+                    <span class="field-radio__label">Похудение</span>
+                  </label>
+                </div>
+                <div class="field-radio__individual">
+                  <label class="field-radio">
+                    <input
+                      class="field-radio__input"
+                      type="radio"
+                      name="goal"
+                      value="power"
+                    />
+                    <span class="field-radio__label">Набор массы</span>
+                  </label>
+                </div>
 
-              <div class="field-radio__individual">
-                <label class="field-radio">
-                  <input
-                    class="field-radio__input"
-                    type="radio"
-                    name="goal"
-                    value="uncertainty"
-                  />
-                  <span class="field-radio__label"
-                    >Не знаю (Нужен ваш совет)</span
-                  >
-                </label>
+                <div class="field-radio__individual">
+                  <label class="field-radio">
+                    <input
+                      class="field-radio__input"
+                      type="radio"
+                      name="goal"
+                      value="uncertainty"
+                    />
+                    <span class="field-radio__label"
+                      >Не знаю (Нужен ваш совет)</span
+                    >
+                  </label>
+                </div>
               </div>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
 
           <fieldset class="cat-form__client">
             <div class="cat-form__client__wrapper">
               <h2 class="cat-form__title cat-form__title--contact">
                 Контактные данные (владельца кота)
               </h2>
-              <div class="cat-form__data">
-                <label class="field-text">
-                  <span class="field-text__lebel field-text__lebel--email"
-                    >E-mail:*</span
-                  >
-                  <input
-                    class="field-text__input field-text__input--email"
-                    name="email"
-                    type="email"
-                    placeholder="kuklachev@gmail.com"
-                    required
-                  />
-                </label>
-              </div>
-              <div class="cat-form__data">
-                <label class="field-text">
-                  <span class="field-text__lebel field-text__lebel--tel"
-                    >Телефон:*</span
-                  >
-                  <input
-                    class="field-text__input field-text__input--tel"
-                    name="phone"
-                    type="tel"
-                    placeholder="8 (960) 900-60-90"
-                    required
-                  />
-                </label>
+              <div class="cat-form__email-tel-wrapper">
+                <div class="cat-form__data">
+                  <label class="field-text">
+                    <span class="field-text__lebel field-text__lebel--email"
+                      >E-mail:*</span
+                    >
+                    <input
+                      class="field-text__input field-text__input--email"
+                      name="email"
+                      type="email"
+                      placeholder="kuklachev@gmail.com"
+                      required
+                    />
+                  </label>
+                </div>
+                <div class="cat-form__data">
+                  <label class="field-text">
+                    <span class="field-text__lebel field-text__lebel--tel"
+                      >Телефон:*</span
+                    >
+                    <input
+                      class="field-text__input field-text__input--tel"
+                      name="phone"
+                      type="tel"
+                      placeholder="8 (960) 900-60-90"
+                      required
+                    />
+                  </label>
+                </div>
               </div>
             </div>
           </fieldset>
@@ -248,13 +252,15 @@
               </div>
             </div>
           </fieldset>
-          <input
-            class="button button--validate"
-            type="submit"
-            value="Отправить заявку"
-          />
+          <div class="cat-form__required-wrapper">
+            <input
+              class="button button--validate"
+              type="submit"
+              value="Отправить заявку"
+            />
 
-          <p class="cat-form__required">* — Обязательные поля</p>
+            <p class="cat-form__required">* — Обязательные поля</p>
+          </div>
         </div>
       </form>
 

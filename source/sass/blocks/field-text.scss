@@ -10,12 +10,20 @@
   &--tel {
     margin-right: 6px;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .field-text input {
   height: 41px;
   padding-left: 14px;
   border: 1px solid $light-border;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .field-text--nameinput input {
@@ -49,10 +57,63 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .field-text__input {
+    &--name {
+      width: 550px;
+    }
+
+    &--age {
+      width: 480px;
+    }
+
+    &--weight {
+      width: 523px;
+    }
+
+    &--email {
+      width: 539px;
+    }
+
+    &--tel {
+      width: 520px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-text__input {
+    &--name {
+      width: 480px;
+    }
+
+    &--age {
+      width: 416px;
+    }
+
+    &--weight {
+      width: 455px;
+    }
+
+    &--email {
+      width: 466px;
+    }
+
+    &--tel {
+      width: 452px;
+    }
+  }
+}
+
 .field-text {
   display: block;
   width: 280px;
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .field-text__lebel--email::after {

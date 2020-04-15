@@ -1,6 +1,10 @@
 .field-checkbox__lebel {
   @include font-osw(16px);
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .field-checkbox input:checked + .field-checkbox__lebel::after {
@@ -15,4 +19,11 @@
   bottom: 9px;
   transform: rotate(-48deg);
   position: absolute;
+
+  @media (min-width: $tablet-width) {
+    width: 25px;
+    height: 16px;
+    left: -63px;
+    bottom: 6px;
+  }
 }

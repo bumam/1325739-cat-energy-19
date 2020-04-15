@@ -8,6 +8,10 @@
     padding-right: 30px;
     padding-left: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 80px;
+  }
 }
 
 .extra-items__header {
@@ -37,4 +41,14 @@
 
 .extra-items__card-wrapper {
   display: block;
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 1px solid $border;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-items__desktop {
+    display: flex;
+  }
 }
