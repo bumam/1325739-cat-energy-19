@@ -47,8 +47,12 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .extra-items__desktop {
+.extra-items__desktop {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+
+  @media (min-width: $desktop-width) {
     display: flex;
   }
 }

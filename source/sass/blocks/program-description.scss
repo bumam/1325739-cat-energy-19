@@ -1,3 +1,8 @@
+.program-description {
+  max-width: 1300px;
+  margin: auto;
+}
+
 .program-description__block {
   position: relative;
   background-color: $gray;
@@ -26,12 +31,9 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .program-description__block-wrapper {
+.program-description__block-wrapper {
+  @media (min-width: $desktop-width) {
     display: flex;
-    padding: 0 45px;
-    padding-right: 30px;
-
     justify-content: space-between;
   }
 }
@@ -169,20 +171,18 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .program-description__text-pro {
+.program-description__text-pro {
+  @media (min-width: $tablet-width) {
     width: 340px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .program-description__text-pro {
+  @media (min-width: $desktop-width) {
     width: 445px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .program-description__header-pro {
+.program-description__header-pro {
+  @media (min-width: $desktop-width) {
     width: 463px;
     padding-left: 60px;
   }

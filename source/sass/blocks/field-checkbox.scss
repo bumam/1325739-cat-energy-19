@@ -7,7 +7,7 @@
   }
 }
 
-.field-checkbox input:checked + .field-checkbox__lebel::after {
+.field-checkbox__input:checked + .field-checkbox__lebel::after {
   width: 18px;
   height: 11px;
   border-radius: 1px;
@@ -23,7 +23,19 @@
   @media (min-width: $tablet-width) {
     width: 25px;
     height: 16px;
-    left: -63px;
+    left: 10px;
     bottom: 6px;
   }
+}
+
+.field-checkbox {
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+  }
+}
+
+.field-checkbox input[type="checkbox"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }

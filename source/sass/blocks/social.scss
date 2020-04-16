@@ -32,6 +32,23 @@
   @media (min-width: $tablet-width) {
     width: 50px;
   }
+
+  @media (min-width: $tablet-width) {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--insta {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+  }
 }
 
 .social__item-icon {
@@ -83,24 +100,5 @@
     margin-left: 0;
     padding-left: 0;
     padding-right: 35px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .social__item {
-    &--vk {
-      width: 30px;
-      height: 16px;
-    }
-
-    &--insta {
-      width: 23px;
-      height: 23px;
-    }
-
-    &--fb {
-      width: 14px;
-      height: 28px;
-    }
   }
 }

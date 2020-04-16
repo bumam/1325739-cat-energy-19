@@ -2,6 +2,9 @@
   @include font-osw(16px);
   margin-right: 12px;
   color: $header;
+  display: flex;
+  flex-grow: 0;
+  align-items: center;
 
   &--email {
     margin-right: 8px;
@@ -35,84 +38,22 @@
 
   @include font-osw(16px);
   color: $text-color;
-
-  &--name {
-    width: 212px;
-  }
-
-  &--age {
-    width: 154px;
-  }
-
-  &--weight {
-    width: 188px;
-  }
-
-  &--email {
-    width: 202px;
-  }
-
-  &--tel {
-    width: 187px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .field-text__input {
-    &--name {
-      width: 550px;
-    }
-
-    &--age {
-      width: 480px;
-    }
-
-    &--weight {
-      width: 523px;
-    }
-
-    &--email {
-      width: 539px;
-    }
-
-    &--tel {
-      width: 520px;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .field-text__input {
-    &--name {
-      width: 480px;
-    }
-
-    &--age {
-      width: 416px;
-    }
-
-    &--weight {
-      width: 455px;
-    }
-
-    &--email {
-      width: 466px;
-    }
-
-    &--tel {
-      width: 452px;
-    }
-  }
+  display: flex;
+  flex-grow: 1;
 }
 
 .field-text {
-  display: block;
-  width: 280px;
+  display: flex;
   margin-bottom: 14px;
+  flex-wrap: wrap;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
   }
 }
 

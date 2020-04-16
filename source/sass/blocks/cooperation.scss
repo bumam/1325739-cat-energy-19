@@ -65,8 +65,8 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .cooperation__street {
+.cooperation__street {
+  @media (min-width: $tablet-width) {
     margin-bottom: 15px;
   }
 }
