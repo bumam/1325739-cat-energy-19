@@ -9,6 +9,10 @@
     padding-top: 81px;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .show-more__wrapper {
@@ -25,6 +29,11 @@
     border: none;
     padding-left: 38px;
     padding-right: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -70,6 +79,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 9px 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    box-sizing: border-box;
+    padding: 9px 40px;
   }
 }
 

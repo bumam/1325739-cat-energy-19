@@ -11,15 +11,19 @@ body {
 
 .page-main {
   flex: 1 0 auto;
-  max-width: 1300px;
   margin: 0 auto;
   min-width: 320px;
   width: 100%;
 }
 
+.page-main__form {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+}
+
 .page-header,
 .footer-page {
-  max-width: 1300px;
   margin: 0 auto;
   min-width: 320px;
   width: 100%;
