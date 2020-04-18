@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body class="body-size">
+  <body>
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav main-nav--open">
           <a class="main-nav__logo">
-            <img
-              class="main-nav__logo-image"
-              src="../img/logo-mobile.svg"
-              width="191"
-              height="39"
-              alt="Кэт-энержи"
-            />
+            <picture>
+              <source
+                media="(min-width: 1300px)"
+                srcset="img/logo-desktop.svg"
+              />
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
+              <img src="../img/logo-mobile.svg" alt="Кэт-энержи" />
+            </picture>
           </a>
           <button class="main-nav__btn">
             <span></span>
@@ -27,14 +28,14 @@
           <div class="main-nav__wrapper-module">
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a class="main-nav__link" href="index.html">Главная</a>
+                <a class="main-nav__link " href="index.html">Главная</a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="catalog.html"
                   >Каталог продукции</a
                 >
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--active">
                 <a class="main-nav__link" href="form.html">подбор программы</a>
               </li>
             </ul>
@@ -286,7 +287,7 @@
               </div>
             </div>
           </div>
-          <div class="map" id="map" style="width:100%; height:365px"></div>
+          <div class="map" id="map" style="width:100%; height:400px"></div>
         </section>
       </div>
     </main>

@@ -1,6 +1,10 @@
 .program-description {
   max-width: 1300px;
   margin: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -5px;
+  }
 }
 
 .program-description__block {
@@ -35,6 +39,11 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    margin: auto;
+    width: 100%;
+    padding-left: 45px;
+    padding-right: 37px;
+    box-sizing: border-box;
   }
 }
 
@@ -43,7 +52,7 @@
   content: "";
   position: absolute;
   height: 50px;
-  top: 24px;
+  top: 26px;
   left: 22px;
   width: 50px;
   background-color: $btn-color;
@@ -68,6 +77,7 @@
   position: relative;
   margin: 0;
   padding: 6px 0;
+  padding-top: 7px;
   font-weight: 400;
   line-height: 1.54;
   color: $header;
@@ -87,7 +97,7 @@
     text-align: center;
     margin-bottom: 58px;
     padding-left: 13px;
-    padding-top: 46px;
+    padding-top: 43px;
   }
 }
 
@@ -113,7 +123,7 @@
   @media (min-width: $desktop-width) {
     width: 71px;
     height: 97px;
-    top: 20px;
+    top: 16px;
     left: 44px;
   }
 }
@@ -138,8 +148,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 47px;
-    left: 10px;
+    top: 45px;
+    left: 20px;
     width: 134px;
     height: 57px;
   }
@@ -184,7 +194,7 @@
 .program-description__header-pro {
   @media (min-width: $desktop-width) {
     width: 463px;
-    padding-left: 60px;
+    padding-left: 65px;
   }
 }
 
@@ -195,7 +205,7 @@
   @include font-osw(16px);
 
   @media (min-width: $tablet-width) {
-    padding-left: 32px;
+    padding-left: 31px;
   }
 }
 

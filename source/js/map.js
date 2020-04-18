@@ -28,7 +28,7 @@ function init() {
   ) {
     myMap = new ymaps.Map("map", {
       center: [59.938631, 30.323055],
-      zoom: 17
+      zoom: 18
     });
 
     myMap.behaviors.disable("scrollZoom");
@@ -39,7 +39,7 @@ function init() {
       {
         iconLayout: "default#image",
         iconImageHref: "img/map-pin.png",
-        iconImageSize: [102, 83],
+        iconImageSize: [124, 106],
         iconImageOffset: [-36, -53]
       }
     );

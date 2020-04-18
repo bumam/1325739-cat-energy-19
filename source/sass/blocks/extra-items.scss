@@ -1,16 +1,28 @@
+.extra-items {
+  @media (min-width: $tablet-width) {
+    margin-top: -77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -67px;
+  }
+}
+
 .extra-items__wrapper {
   padding-top: 28px;
   padding-right: 20px;
-  padding-left: 20px;
+  padding-left: 19px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 64px;
+    padding-top: 0;
     padding-right: 30px;
     padding-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 80px;
+    padding-bottom: 85px;
+    padding-left: 3px;
+    padding-right: 0;
   }
 }
 
@@ -37,6 +49,34 @@
   background-color: $btn-color;
   margin-top: 15px;
   margin-left: 247px;
+
+  @media (min-width: $tablet-width) {
+    width: 26px;
+    margin-top: 26px;
+    margin-left: -27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 80px;
+    margin-left: -68px;
+  }
+}
+
+.extra-items__header::after {
+  @media (min-width: $tablet-width) {
+    box-sizing: inherit;
+    content: "";
+    position: absolute;
+    width: 325px;
+    height: 3px;
+    background-color: #68b738;
+    margin-top: 26px;
+    margin-left: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1000px;
+  }
 }
 
 .extra-items__card-wrapper {
@@ -44,6 +84,11 @@
 
   @media (min-width: $desktop-width) {
     border-bottom: 1px solid $border;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 895px;
+    padding-left: 40px;
   }
 }
 
@@ -54,5 +99,6 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
   }
 }

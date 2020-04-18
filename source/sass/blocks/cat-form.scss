@@ -171,7 +171,7 @@
 .cat-form__title--comment {
   margin: 0;
   margin-bottom: 35px;
-  width: fit-content;
+  width: auto;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
@@ -355,7 +355,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: fit-content;
+    width: auto;
   }
 }
 
