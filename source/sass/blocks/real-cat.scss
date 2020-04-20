@@ -124,7 +124,7 @@
 .real-cat__double-wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
-    background-color: $gray;
+    background: linear-gradient(to right, $gray 72%, #eaeaea 72%, #eaeaea 100%);
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 55px;

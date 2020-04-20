@@ -1,0 +1,11 @@
+.modification {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+  }
+}

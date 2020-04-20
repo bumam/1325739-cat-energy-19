@@ -11,7 +11,7 @@
   }
 }
 
-.field-radio__individual {
+.cat-form__individual {
   display: flex;
   flex-wrap: wrap;
   min-width: 150px;
@@ -22,7 +22,7 @@
   }
 }
 
-.field-radio__individual label::before {
+.cat-form__individual label::before {
   content: "";
   display: inline-block;
   height: 28px;
@@ -33,12 +33,12 @@
   left: -46px;
 }
 
-.field-radio__individual label {
+.cat-form__individual label {
   position: relative;
 }
 
-.field-radio__individual label::before,
-.field-radio__individual label::after {
+.cat-form__individual label::before,
+.cat-form__individual label::after {
   position: absolute;
 }
 
