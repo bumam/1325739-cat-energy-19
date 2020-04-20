@@ -207,6 +207,15 @@
   margin-bottom: 12px;
   width: 191px;
   height: 39px;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   @media (min-width: $tablet-width) {
     width: 174px;
