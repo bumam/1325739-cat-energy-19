@@ -1,14 +1,11 @@
 .real-cat {
   background-color: $gray;
-  padding-left: 20px;
   padding-top: 52px;
   margin: auto;
   padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     background-color: white;
-    padding-left: 30px;
-    padding-right: 30px;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -18,22 +15,8 @@
     flex-direction: column;
     padding-left: 0;
     padding-right: 0;
-  }
-}
-
-.real-cat__width-wrapper {
-  max-width: 1300px;
-  margin: auto;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  flex-direction: column;
-
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
-    margin-left: 82px;
-    margin-right: 80px;
+    margin-top: 125px;
+    background: linear-gradient(to right, $gray 75%, #eaeaea 75%, #eaeaea 100%);
   }
 }
 
@@ -43,21 +26,21 @@
   color: $header;
   font-weight: 400;
   margin: auto;
-  margin-bottom: 19px;
+  margin-bottom: 35px;
   max-width: 1300px;
   box-sizing: border-box;
   width: 100%;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    margin-bottom: 51px;
+    margin-bottom: 65px;
     line-height: 0.9;
   }
 
   @media (min-width: $desktop-width) {
     line-height: 0.73;
-    margin-left: 112px;
-    margin-bottom: 84px;
+    margin-top: -122px;
+    margin-bottom: 150px;
   }
 }
 
@@ -115,20 +98,29 @@
 }
 
 .real-cat__wrapper {
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 436px;
+    width: 480px;
     box-sizing: border-box;
+    padding-right: 0;
+    padding-left: 42px;
+    padding-bottom: 70px;
   }
 }
 
-.real-cat__double-wrapper {
+.real-cat__container {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $desktop-width) {
-    display: flex;
-    background-color: $gray;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 55px;
-    justify-content: space-between;
-    padding-bottom: 10px;
+    margin: 0 auto;
+    width: 1300px;
+    flex-direction: row;
   }
 }

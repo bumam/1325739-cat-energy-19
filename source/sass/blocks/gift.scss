@@ -41,13 +41,13 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-left: 424px;
-    text-align: start;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     text-align: center;
-    margin-left: 40px;
-    margin-top: 70px;
+    transform: translate(45px, 70px);
+    margin: 0;
   }
 
   &::after {

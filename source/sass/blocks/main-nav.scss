@@ -158,8 +158,10 @@
     }
   }
 
-  &:nth-child(3) {
-    border-bottom: none;
+  @media (max-width: 767px) {
+    &:nth-child(3) {
+      border-bottom: none;
+    }
   }
 }
 

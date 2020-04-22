@@ -1,0 +1,10 @@
+.modification-catalog {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

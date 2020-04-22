@@ -48,17 +48,15 @@
   color: $text-color;
   text-align: center;
   background-color: $gray;
-  display: inline-block;
-  vertical-align: top;
+  display: flex;
   padding-left: 15px;
   padding-right: 15px;
   font-size: 12px;
   line-height: 1;
   transform: translateY(-8px);
+  margin: auto;
   margin-bottom: 15px;
-  margin-top: 0;
   width: 54px;
-  margin-left: -5px;
 
   @media (min-width: $tablet-width) {
     background-color: white;
@@ -66,24 +64,12 @@
     font-size: 14px;
     padding-left: 8px;
     padding-right: 8px;
-    margin-left: -10px;
+    width: fit-content;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 38px;
     background-color: $gray;
     margin-top: -2px;
-  }
-}
-
-.results__big-wrapper {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-wrap: wrap;
   }
 }

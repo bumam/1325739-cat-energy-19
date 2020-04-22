@@ -7,9 +7,6 @@
 .main-promo__wrapper {
   text-align: center;
   color: white;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
   margin: auto;
   max-width: 1300px;
   box-sizing: border-box;
@@ -99,19 +96,24 @@
   margin-top: -2px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 371px;
-    left: 100px;
+    position: relative;
+    transform: translate(100px, 31px);
+    margin-bottom: 560px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 452px;
-    left: 173px;
+    transform: translate(-452px, 313px);
+    margin-bottom: 447px;
   }
 }
 
 .main-promo__image-wrapper {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    transform: translate(30px);
+  }
+
   @media (min-width: $desktop-width) {
-    transform: translateX(-11%);
+    transform: translate(490px);
   }
 }

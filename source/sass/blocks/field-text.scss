@@ -8,29 +8,53 @@
 
   &--email {
     margin-right: 8px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 17px;
+    }
   }
 
   &--tel {
     margin-right: 6px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 10px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 18px;
   }
 }
 
 .field-text input {
   height: 41px;
-  padding-left: 14px;
+  padding-left: 20px;
   border: 1px solid $light-border;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    height: 52px;
+    padding-left: 25px;
   }
-}
 
-.field-text--nameinput input {
-  padding-left: 12px;
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+  }
+
+  &:focus,
+  &:active {
+    border: solid 2px #444444;
+    outline: none;
+  }
+
+  &:invalid {
+    outline: $invalid;
+  }
 }
 
 .field-text__input {
@@ -48,36 +72,56 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 31px;
+    margin-bottom: 16px;
   }
 }
 
-.field-text__lebel--email::after {
-  content: "";
-  box-sizing: inherit;
-  position: absolute;
-  background-image: url("../img/icon-mail.svg");
-  background-size: 18px 14px;
-  background-repeat: no-repeat;
-  width: 18px;
-  height: 14px;
-  margin-left: 198px;
-  margin-top: 16px;
+.field-text__svg-email {
+  transform: translate(-35px, 10px);
+
+  @media (min-width: $tablet-width) {
+    transform: translate(-35px, 20px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 18px;
+    height: 14px;
+    transform: translate(533px, 23px);
+    position: absolute;
+  }
 }
 
-.field-text__lebel--tel::after {
-  content: "";
-  box-sizing: inherit;
-  position: absolute;
-  background-image: url("../img/icon-phone.svg");
-  background-size: 21px 21px;
-  background-repeat: no-repeat;
-  width: 21px;
-  height: 21px;
-  margin-left: 180px;
-  margin-top: 12px;
+.field-text__svg-tel {
+  transform: translate(-35px, 10px);
+
+  @media (min-width: $tablet-width) {
+    transform: translate(-35px, 20px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 21px;
+    height: 21px;
+    transform: translate(536px, 20px);
+    position: absolute;
+  }
+}
+
+.field-text__input--email {
+  @media (min-width: $desktop-width) {
+    width: 486px;
+    flex-grow: 0;
+    box-sizing: border-box;
+  }
+}
+
+.field-text__input--tel {
+  @media (min-width: $desktop-width) {
+    width: 472px;
+    flex-grow: 0;
+    box-sizing: border-box;
+  }
 }

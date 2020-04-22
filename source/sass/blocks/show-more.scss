@@ -77,6 +77,14 @@
   color: $text-color;
   text-align: center;
 
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 9px 78px;
   }

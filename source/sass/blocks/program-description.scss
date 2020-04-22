@@ -1,10 +1,6 @@
 .program-description {
   max-width: 1300px;
   margin: auto;
-
-  @media (min-width: $tablet-width) {
-    margin-top: -5px;
-  }
 }
 
 .program-description__block {
@@ -211,8 +207,8 @@
 
 .program-description__link {
   position: relative;
-  display: inline-block;
-  vertical-align: top;
+  display: block;
+  width: fit-content;
   text-decoration: none;
   color: $header;
   margin-top: 0;

@@ -1,6 +1,5 @@
 .button {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   width: 280px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -74,5 +73,11 @@
   @media (min-width: $tablet-width) {
     margin-left: 0;
     margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+    height: 52px;
   }
 }

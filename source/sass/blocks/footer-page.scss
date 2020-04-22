@@ -11,7 +11,7 @@
   text-align: center;
   padding-left: 19px;
   padding-right: 20px;
-  padding-top: 17px;
+  padding-top: 18px;
   padding-bottom: 20px;
   width: 100%;
 
@@ -20,7 +20,7 @@
     justify-content: space-between;
     padding-left: 32px;
     padding-right: 30px;
-    padding-top: 45px;
+    padding-top: 50px;
     padding-bottom: 47px;
     align-items: center;
     text-align: start;
@@ -29,7 +29,8 @@
   @media (min-width: $desktop-width) {
     padding-left: 43px;
     padding-right: 36px;
-    padding-top: 55px;
+    padding-top: 66px;
+    padding-bottom: 60px;
   }
 }
 
