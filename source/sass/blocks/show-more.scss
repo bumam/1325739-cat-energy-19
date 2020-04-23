@@ -21,7 +21,7 @@
   flex-wrap: wrap;
   border-top: 1px solid $border;
   border-bottom: 1px solid $border;
-  padding-top: 82px;
+  padding-top: 81px;
   text-align: center;
   padding-bottom: 32px;
 
@@ -76,6 +76,14 @@
   text-decoration: none;
   color: $text-color;
   text-align: center;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 9px 78px;

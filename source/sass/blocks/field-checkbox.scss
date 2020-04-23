@@ -1,4 +1,8 @@
 .field-checkbox__lebel {
+  &:active {
+    opacity: 0.3;
+  }
+
   @include font-osw(16px);
   color: $text-color;
 
@@ -14,23 +18,27 @@
   border-left: 2px solid #68b738;
   border-bottom: 2px solid #68b738;
   content: "";
-  display: inline-block;
+  display: block;
   left: -40px;
   bottom: 9px;
   transform: rotate(-48deg);
   position: absolute;
 
   @media (min-width: $tablet-width) {
-    width: 25px;
-    height: 16px;
-    left: 10px;
-    bottom: 6px;
+    width: 20px;
+    height: 13px;
+    left: 9px;
+    bottom: 8px;
   }
 }
 
 .field-checkbox {
   @media (min-width: $tablet-width) {
     padding-left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
   }
 }
 

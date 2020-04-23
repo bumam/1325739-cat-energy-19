@@ -14,11 +14,13 @@
     width: 631px;
     height: 174px;
     font-size: 20px;
+    padding-top: 10px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: 1220px;
     height: 174px;
+    padding-top: 22px;
   }
 }
 

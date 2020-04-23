@@ -9,26 +9,28 @@
   max-width: 1300px;
   box-sizing: border-box;
   text-align: center;
-  padding-left: 20px;
+  padding-left: 19px;
   padding-right: 20px;
-  padding-top: 23px;
+  padding-top: 18px;
   padding-bottom: 20px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-left: 34px;
-    padding-right: 33px;
-    padding-top: 55px;
+    padding-left: 32px;
+    padding-right: 30px;
+    padding-top: 50px;
     padding-bottom: 47px;
     align-items: center;
     text-align: start;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 109px;
-    padding-right: 110px;
+    padding-left: 43px;
+    padding-right: 36px;
+    padding-top: 66px;
+    padding-bottom: 60px;
   }
 }
 

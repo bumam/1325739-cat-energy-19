@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body class="body-size">
-    <header class="page-header">
+  <body class="body-index">
+    <header class="page-header page-header__background">
       <div class="page-header__wrapper">
         <nav class="main-nav main-nav--open">
           <a class="main-nav__logo">
-            <img
-              class="main-nav_logo-image"
-              src="../img/logo-mobile.svg"
-              width="191"
-              height="39"
-              alt="Кэт-энержи"
-            />
+            <picture>
+              <source
+                media="(min-width: 1300px)"
+                srcset="img/logo-desktop.svg"
+              />
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
+              <img src="img/logo-mobile.svg" alt="Кэт-энержи" />
+            </picture>
           </a>
           <button class="main-nav__btn">
             <span></span>
@@ -26,7 +27,9 @@
 
           <div class="main-nav__wrapper-module">
             <ul class="main-nav__list">
-              <li class="main-nav__item">
+              <li
+                class="main-nav__item main-nav__item--active main-nav__item--active-white"
+              >
                 <a
                   class="main-nav__link main-nav__link--white"
                   href="index.html"
@@ -62,13 +65,18 @@
             <p class="main-promo__slogan">Занялся собой? Займись котом!</p>
           </div>
           <div class="main-promo__image-wrapper">
-            <img
-              class="main-promo__image"
-              src="img/index-can-mobile@1x.png"
-              alt="Курица Cat Energy"
-              width="280"
-              height="270"
-            />
+            <picture>
+              <source
+                media="(min-width: 1300px)"
+                srcset="img/index-can-desktop@1x.png"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/index-can-tablet@1x.jpg"
+              />
+              <img src="img/index-can-mobile@1x.png" alt="Сat Energy Курица" />
+            </picture>
           </div>
           <div class="main-promo__button">
             <a class="button">Подобрать программу</a>
@@ -141,8 +149,8 @@
             </li>
             <li class="how-it-works__item how-it-works__item--time">
               <p class="how-it-works__text">
-                Уже через месяц наслаждайтесь изменениями к лучшему<br />
-                вашего питомца!
+                Уже через месяц наслаждайтесь изменениями к лучшему
+                <span>вашего питомца!</span>
               </p>
             </li>
           </ol>
@@ -150,78 +158,73 @@
       </section>
 
       <section class="real-cat">
-        <h2 class="real-cat__header">Живой пример</h2>
-        <div class="real-cat__double-wrapper">
-          <div class="real-cat__width-wrapper">
-            <div class="real-cat__wrapper">
-              <p class="real-cat__description">
-                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
-                на Cat Energy Slim. Отличный результат без изнуряющих
-                тренировок! При этом он не менял своих привычек и по-прежнему
-                спит по 16 часов в день.
-              </p>
+        <div class="real-cat__container">
+          <div class="real-cat__wrapper">
+            <h2 class="real-cat__header">Живой пример</h2>
 
-              <div class="results__big-wrapper">
-                <div class="results">
-                  <div class="results__wrapper">
-                    <p class="results__main-result">5 кг</p>
-                    <p class="results__wrtite">
-                      снижение веса
-                    </p>
-                  </div>
-                  <div class="results__wrapper">
-                    <p class="results__main-result">60 дней</p>
-                    <p class="results__wrtite">затрачено времени</p>
-                  </div>
-                </div>
-                <p class="real-cat__spending">
-                  Затраты на питание: <span>15 000 руб.</span>
+                <p class="real-cat__description">
+                  Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный
+                  корм на Cat Energy Slim. Отличный результат без изнуряющих
+                  тренировок! При этом он не менял своих привычек и по-прежнему
+                  спит по 16 часов в день.
                 </p>
-              </div>
-            </div>
 
-            <div class="slider">
-              <div class="slider-image slider-image__before">
-                <img
-                  class="slider-image__cat"
-                  alt="fat-cat"
-                  src="img/before-mobile@1x.png"
-                  width="320"
-                  height="240"
-                />
-              </div>
-
-              <!--<div class="slider-image slider-image__after">
-            <img
-              class="slider-image__cat"
-              alt="skinny-cat"
-              src="../img/after-mobile@1x.png"
-            />
-          </div> -->
-
-              <div class="slider__buttons-block">
-                <div class="slider__progress-toggle">
-                  <button
-                    class="slider__progress-button slider__progress-button--before"
-                    type="button"
-                  >
-                    Было
-                  </button>
+                <div class="modification">
+                  <div class="results">
+                    <div class="results__wrapper">
+                      <p class="results__main-result">5 кг</p>
+                      <p class="results__wrtite">
+                        снижение веса
+                      </p>
+                    </div>
+                    <div class="results__wrapper">
+                      <p class="results__main-result">60 дней</p>
+                      <p class="results__wrtite">затрачено времени</p>
+                    </div>
+                  </div>
+                  <p class="real-cat__spending">
+                    Затраты на питание: <span>15 000 руб.</span>
+                  </p>
                 </div>
-                <div class="slider__range-wrapper">
-                  <span class="slider__green-range"></span>
-                </div>
-                <div class="slider__progress-toggle">
-                  <button
-                    class="slider__progress-button slider__progress-button--after"
-                    type="button"
-                  >
-                    Стало
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
+
+              <div class="slider">
+                <div class="slider__image-wrapper">
+                  <div class="slider-image slider-image__before"></div>
+
+                  <div class="slider-image slider-image__after"></div>
+                </div>
+
+                <div class="slider__buttons-block">
+                  <div class="slider__progress-toggle">
+                    <button
+                      class="slider__progress-button slider__progress-button--before"
+                      type="button"
+                    >
+                      Было
+                    </button>
+                  </div>
+                  <div class="slider__range-wrapper">
+                    <input
+                      type="range"
+                      min="1"
+                      max="100"
+                      value="50"
+                      class="slider__range"
+                    />
+                  </div>
+                  <div class="slider__progress-toggle">
+                    <button
+                      class="slider__progress-button slider__progress-button--after"
+                      type="button"
+                    >
+                      Стало
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
         </div>
       </section>
 
@@ -240,7 +243,7 @@
             </div>
           </div>
         </div>
-        <div class="map" id="map" style="width:100%; height:365px"></div>
+        <div class="map" id="map" style="width:100%; height:400px"></div>
       </section>
     </main>
     <footer class="footer-page">
@@ -254,11 +257,11 @@
             alt="Кэт-энержи"
           />
         </a>
-        <ul class="social">
+        <ul class="social social__index">
           <li class="social__item">
             <a class="social__link">
               <svg
-                class="social__item-icon social__item--vk"
+                class="social__item-icon social__item-icon--vk social__item-icon--index"
                 width="22"
                 height="12"
                 xmlns="http://www.w3.org/2000/svg"
@@ -275,7 +278,7 @@
           <li class="social__item">
             <a class="social__link">
               <svg
-                class="social__item-icon social__item--insta"
+                class="social__item-icon social__item-icon--insta"
                 width="16"
                 height="16"
                 viewBox="-3 -3 23 23"
@@ -292,7 +295,7 @@
           <li class="social__item">
             <a class="social__link">
               <svg
-                class="social__item-icon social__item--fb"
+                class="social__item-icon social__item-icon--fb"
                 width="10"
                 height="19"
                 xmlns="http://www.w3.org/2000/svg"
@@ -316,8 +319,16 @@
         </div>
       </div>
     </footer>
+    <script>
+      if (window.innerWidth >= 320 && window.innerWidth < 768) {
+        var oRange = document.querySelector('input[type="range"]');
+        oRange.value = 10;
+      }
+    </script>
+
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="js/map.js"></script>
+    <script src="js/slider.js"></script>
     <script>
       if (window.innerWidth < 768) {
         var script = document.createElement("script");

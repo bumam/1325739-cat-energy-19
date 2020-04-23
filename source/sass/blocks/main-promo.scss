@@ -1,11 +1,13 @@
+.main-promo {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 135px;
+  }
+}
+
 .main-promo__wrapper {
   text-align: center;
   color: white;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
   margin: auto;
-  margin-bottom: 22px;
   max-width: 1300px;
   box-sizing: border-box;
 
@@ -28,21 +30,21 @@
   padding-top: 26px;
   line-height: 1;
   margin-top: 0;
-  padding-left: 36px;
+  padding-left: 20px;
   padding-right: 18px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     color: $header;
     font-size: 60px;
-    padding-top: 53px;
     padding-left: 117px;
     text-align: start;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 124px;
-    padding-top: 114px;
+    padding-left: 123px;
+    padding-top: 78px;
   }
 }
 
@@ -72,51 +74,46 @@
   height: 16px;
   margin-bottom: 29px;
   margin-top: 0;
-  padding-left: 20px;
 
   @include font-osw(14px);
 
   @media (min-width: $tablet-width) {
     color: $header;
     font-size: 20px;
-    padding-left: 118px;
+    padding-left: 119px;
     text-align: start;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 124px;
+    padding-left: 123px;
   }
 }
 
 .main-promo__button {
   padding-right: 20px;
   padding-left: 20px;
+  margin-top: -2px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 368px;
-    left: 99px;
+    position: relative;
+    transform: translate(100px, 31px);
+    margin-bottom: 560px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 447px;
-    right: 910px;
+    transform: translate(-452px, 313px);
+    margin-bottom: 447px;
   }
 }
 
-.main-promo__image-wrapper::after {
-  @media (min-width: $desktop-width) {
-    content: "";
-    z-index: -1;
-    background-color: #68b738;
-    width: 720px;
-    height: 696px;
+.main-promo__image-wrapper {
+  @media (min-width: $tablet-width) {
     position: absolute;
-    top: -8px;
-    margin-left: -250px;
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 720px 696px;
+    transform: translate(30px);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(490px);
   }
 }

@@ -16,8 +16,8 @@ function init() {
       {
         iconLayout: "default#image",
         iconImageHref: "img/map-pin.png",
-        iconImageSize: [72, 53],
-        iconImageOffset: [-36, -53]
+        iconImageSize: [60, 42],
+        iconImageOffset: [-30, -40]
       }
     );
 
@@ -28,7 +28,7 @@ function init() {
   ) {
     myMap = new ymaps.Map("map", {
       center: [59.938631, 30.323055],
-      zoom: 17
+      zoom: 18
     });
 
     myMap.behaviors.disable("scrollZoom");
@@ -39,8 +39,8 @@ function init() {
       {
         iconLayout: "default#image",
         iconImageHref: "img/map-pin.png",
-        iconImageSize: [102, 83],
-        iconImageOffset: [-36, -53]
+        iconImageSize: [111, 93],
+        iconImageOffset: [-55, -58]
       }
     );
 
@@ -59,7 +59,7 @@ function init() {
       {
         iconLayout: "default#image",
         iconImageHref: "img/map-pin.png",
-        iconImageSize: [124, 106],
+        iconImageSize: [120, 102],
         iconImageOffset: [-72, -106]
       }
     );
