@@ -1,8 +1,22 @@
-.field-checkbox__lebel {
+.field-checkbox {
+  &:hover {
+    opacity: 0.8;
+  }
+
   &:active {
     opacity: 0.3;
   }
 
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+  }
+}
+
+.field-checkbox__lebel {
   @include font-osw(16px);
   color: $text-color;
 
@@ -29,16 +43,6 @@
     height: 13px;
     left: 9px;
     bottom: 8px;
-  }
-}
-
-.field-checkbox {
-  @media (min-width: $tablet-width) {
-    padding-left: 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 60px;
   }
 }
 

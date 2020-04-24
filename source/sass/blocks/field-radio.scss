@@ -1,13 +1,21 @@
 .field-radio {
   width: 100%;
-}
 
-.field-radio__label {
-  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
 
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 87px;
+  }
+}
+
+.field-radio__label {
+  cursor: pointer;
 
   @include font-osw(16px);
   color: $text-color;
@@ -36,8 +44,8 @@
   position: absolute;
 
   @media (min-width: $tablet-width) {
-    left: -48px;
-    top: 4px;
+    left: 38px;
+    top: 3px;
     height: 16px;
     width: 16px;
   }

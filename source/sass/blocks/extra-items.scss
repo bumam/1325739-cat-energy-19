@@ -10,8 +10,8 @@
 
 .extra-items__wrapper {
   padding-top: 28px;
-  padding-right: 20px;
-  padding-left: 19px;
+  padding-right: 18px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -32,50 +32,19 @@
   font-size: 24px;
   margin: 0;
   margin-bottom: 32px;
+  background-color: white;
+  width: fit-content;
+  padding-right: 21px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     padding-left: 37px;
     margin-bottom: 78px;
-  }
-}
-
-.extra-items__wrapper::before {
-  box-sizing: inherit;
-  content: "";
-  position: absolute;
-  width: 53px;
-  height: 3px;
-  background-color: $btn-color;
-  margin-top: 15px;
-  margin-left: 247px;
-
-  @media (min-width: $tablet-width) {
-    width: 26px;
-    margin-top: 26px;
-    margin-left: -27px;
+    padding-right: 37px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 80px;
-    margin-left: -68px;
-  }
-}
-
-.extra-items__header::after {
-  @media (min-width: $tablet-width) {
-    box-sizing: inherit;
-    content: "";
-    position: absolute;
-    width: 325px;
-    height: 3px;
-    background-color: #68b738;
-    margin-top: 26px;
-    margin-left: 37px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1000px;
+    margin-bottom: 80px;
   }
 }
 

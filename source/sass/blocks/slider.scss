@@ -86,6 +86,12 @@
   cursor: pointer;
   padding-bottom: 5px;
 
+  &:hover,
+  &:focus,
+  &:active {
+    outline: transparent;
+  }
+
   @media (min-width: $tablet-width) {
     border-bottom: 1px dotted #bbbaba;
     font-size: 20px;
@@ -169,7 +175,6 @@ input[type="range"]::-ms-track {
   height: 6px;
   background-color: $btn-color;
   border-radius: 3px;
-  left: 1px;
 
   @media (min-width: $tablet-width) {
     left: 0;
@@ -179,23 +184,23 @@ input[type="range"]::-ms-track {
     border: 10px solid white;
     box-shadow: 0 0 0 1px $dark-border;
     margin-top: -15px;
-
-    &:hover {
-      box-shadow: 0 0 0 1px $dark-border, 0 3px 3px 1px $dark-border;
-    }
-
-    &:active {
-      box-shadow: 0 0 0 2px $btn-color, 0 6px 3px 1px $dark-border;
-    }
   }
+}
+
+.slider__range:hover::-webkit-slider-thumb {
+  box-shadow: 0 0 0 1px $dark-border, 0 3px 3px 1px $dark-border;
+}
+
+.slider__range:active::-webkit-slider-thumb {
+  box-shadow: 0 0 0 2px $btn-color, 0 6px 3px 1px $dark-border;
 }
 
 .slider__range::-moz-range-thumb {
   appearance: none;
   width: 35px;
-  height: 6px;
+  height: 3px;
   background-color: $btn-color;
-  border-radius: 3px;
+  border-radius: 20%;
 
   @media (min-width: $tablet-width) {
     width: 10px;
@@ -249,14 +254,14 @@ input[type="range"]::-ms-track {
 
 .slider__range::-webkit-slider-runnable-track {
   width: 100%;
-  height: 16px;
-  padding-top: 3.5px;
-  padding-bottom: 3.5px;
+  height: 14px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   padding-left: 3px;
   padding-right: 3px;
   border: 1px solid #dcdcdc;
   background-color: white;
-  border-radius: 6px;
+  border-radius: 7px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -270,14 +275,14 @@ input[type="range"]::-ms-track {
 
 .slider__range::-moz-range-track {
   width: 100%;
-  height: 16px;
-  padding-top: 3.5px;
-  padding-bottom: 3.5px;
+  height: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   padding-left: 3px;
   padding-right: 3px;
   border: 1px solid #dcdcdc;
   background-color: white;
-  border-radius: 6px;
+  border-radius: 8px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -382,7 +387,6 @@ input[type="range"]::-ms-fill-upper {
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to right, $gray 50%, #eaeaea 50%, #eaeaea 100%);
     background-color: $gray;
   }
 

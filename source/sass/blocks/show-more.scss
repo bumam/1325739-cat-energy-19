@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     border: 1px solid $border;
-    width: 324px;
+    width: 45%;
     height: 431px;
     box-sizing: border-box;
     padding-top: 81px;
@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 245px;
+    max-width: 245px;
   }
 }
 
@@ -86,7 +86,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 9px 78px;
+    padding: 9px 70px;
   }
 
   @media (min-width: $desktop-width) {

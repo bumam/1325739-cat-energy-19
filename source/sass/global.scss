@@ -2,11 +2,20 @@
   display: none;
 }
 
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   min-width: 320px;
   display: flex;
   flex-direction: column;
   padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .page-main {
