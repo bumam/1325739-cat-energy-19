@@ -15,8 +15,11 @@
     flex-direction: column;
     padding-left: 0;
     padding-right: 0;
-    margin-top: 125px;
-    background-color: $gray;
+    background: linear-gradient(to right, $gray 0%, $gray 78.5%, #ebebeb 78.5%, #ebebeb 100%);
+    background-image: linear-gradient(to top, $gray 0%, $gray 78.5%, white 78.5%, white 100%);
+    background-position: bottom;
+    background-size: 100% 78.5%;
+    background-repeat: no-repeat;
   }
 }
 
@@ -26,7 +29,7 @@
   color: $header;
   font-weight: 400;
   margin: auto;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   max-width: 1300px;
   box-sizing: border-box;
   width: 100%;
@@ -39,8 +42,7 @@
 
   @media (min-width: $desktop-width) {
     line-height: 0.73;
-    margin-top: -122px;
-    margin-bottom: 150px;
+    margin-bottom: 155px;
   }
 }
 
@@ -76,8 +78,8 @@
   @media (min-width: $tablet-width) {
     width: 174px;
     font-size: 20px;
-    text-align: end;
-    margin-bottom: 263px;
+    text-align: right;
+    margin-bottom: 94px;
     margin-top: 0;
     padding-top: 7px;
     padding-right: 0;
@@ -99,10 +101,12 @@
 
 .real-cat__wrapper {
   padding-left: 20px;
+  padding-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -122,5 +126,16 @@
     margin: 0 auto;
     width: 1300px;
     flex-direction: row;
+  }
+}
+
+.real-cat::before {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: $gray;
+    margin-top: -49px;
   }
 }

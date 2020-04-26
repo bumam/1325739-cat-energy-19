@@ -32,7 +32,7 @@
 }
 
 .field-text input {
-  height: 41px;
+  height: 45px;
   padding-left: 20px;
   border: 1px solid $light-border;
   box-sizing: border-box;
@@ -53,10 +53,6 @@
     outline: none;
     box-sizing: border-box;
   }
-
-  &:invalid {
-    outline: $invalid;
-  }
 }
 
 .field-text__input {
@@ -69,7 +65,7 @@
 
 .field-text {
   display: flex;
-  margin-bottom: 19px;
+  margin-bottom: 15px;
   flex-wrap: wrap;
   width: 100%;
 
@@ -79,10 +75,10 @@
 }
 
 .field-text__svg-email {
-  transform: translate(-35px, 10px);
+  transform: translate(-35px, 12px);
 
   @media (min-width: $tablet-width) {
-    transform: translate(-35px, 20px);
+    transform: translate(-35px, 18px);
   }
 
   @media (min-width: $desktop-width) {
@@ -94,18 +90,23 @@
 }
 
 .field-text__svg-tel {
-  transform: translate(-35px, 10px);
+  transform: translate(-35px, 12px);
 
   @media (min-width: $tablet-width) {
-    transform: translate(-35px, 20px);
+    transform: translate(-35px, 18px);
   }
 
   @media (min-width: $desktop-width) {
     width: 21px;
     height: 21px;
-    transform: translate(536px, 20px);
+    transform: translate(536px, 18px);
     position: absolute;
   }
+}
+
+.field-text__input--tel:focus + .field-text__svg-tel path,
+.field-text__input--email:focus + .field-text__svg-email path {
+  fill: $btn-color;
 }
 
 .field-text__input--email {

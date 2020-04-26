@@ -32,7 +32,6 @@
               >
                 <a
                   class="main-nav__link main-nav__link--white"
-                  href="index.html"
                   >Главная</a
                 >
               </li>
@@ -85,7 +84,6 @@
       </section>
 
       <section class="program-description">
-        <h2 class="visually-hidden">Описание программ</h2>
         <div class="program-description__block-wrapper">
           <article class="program-description__block">
             <div class="program-description__inner">
@@ -158,6 +156,7 @@
       </section>
 
       <section class="real-cat">
+
         <div class="real-cat__container">
           <div class="real-cat__wrapper">
             <h2 class="real-cat__header">Живой пример</h2>
@@ -179,7 +178,7 @@
                     </div>
                     <div class="results__wrapper">
                       <p class="results__main-result">60 дней</p>
-                      <p class="results__wrtite">затрачено времени</p>
+                      <p class="results__wrtite results__wrtite--width">затрачено времени</p>
                     </div>
                   </div>
                   <p class="real-cat__spending">
@@ -190,9 +189,31 @@
 
               <div class="slider">
                 <div class="slider__image-wrapper">
-                  <div class="slider-image slider-image__before"></div>
+                  <div class="slider-image">
+                    <picture>
+                      <source
+                      media="(min-width: 1300px)"
+                      srcset="img/before-desktop@1x.png"
+                    />
+                    <source media="(min-width: 768px)"
+                    srcset="img/before-tablet@1x.png"/>
 
-                  <div class="slider-image slider-image__after"></div>
+                    <img src="img/before-mobile@1x.png" alt="Before" class="slider-image__before" width="320" height="240"/>
+                    </picture>
+                  </div>
+
+                  <div class="slider-image">
+                    <picture>
+                      <source
+                      media="(min-width: 1300px)"
+                      srcset="img/after-desktop@1x.png"
+                    />
+                    <source media="(min-width: 768px)"
+                    srcset="img/after-tablet@1x.png"/>
+
+                    <img src="img/after-mobile@1x.png" alt="After" class="slider-image__after" width="320" height="240"/>
+                    </picture>
+                  </div>
                 </div>
 
                 <div class="slider__buttons-block">
@@ -211,6 +232,7 @@
                       max="100"
                       value="50"
                       class="slider__range"
+                      id="range"
                     />
                   </div>
                   <div class="slider__progress-toggle">
@@ -224,13 +246,13 @@
                 </div>
               </div>
             </div>
-
         </div>
+
       </section>
 
       <section class="cooperation">
         <div class="cooperation__wrapper">
-          <div class="cooperation__inner">
+          <div class="cooperation__inner cooperation__index">
             <h2 class="cooperation__title">
               Приглашаем <br />
               к сотрудничеству дилеров!
@@ -248,7 +270,7 @@
     </main>
     <footer class="footer-page">
       <div class="footer-page__wrapper">
-        <a class="footer-page__logo" href="index.html">
+        <a class="footer-page__logo">
           <img
             class="footer-page__logo-image"
             src="img/footer-logo-svg.png"
@@ -319,47 +341,11 @@
         </div>
       </div>
     </footer>
-    <script>
-      if (window.innerWidth >= 320 && window.innerWidth < 768) {
-        var oRange = document.querySelector('input[type="range"]');
-        oRange.value = 10;
-      }
-    </script>
 
+    <script  src="js/oRange.js"> </script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="js/map.js"></script>
     <script src="js/slider.js"></script>
-    <script>
-      if (window.innerWidth < 768) {
-        var script = document.createElement("script");
-        script.src = "js/menu.js";
-        document.head.appendChild(script);
-      }
-    </script>
-    <script>
-      window.addEventListener(
-        "orientationchange",
-        function() {
-          if (window.matchMedia("(orientation: portrait)").matches) {
-            // Режим PORTRAIT (книжный)
-            if (window.innerWidth < 768) {
-              var script = document.createElement("script");
-              script.src = "js/menu.js";
-              document.head.appendChild(script);
-            }
-          }
-
-          if (window.matchMedia("(orientation: landscape)").matches) {
-            // режим LANDSCAPE (альбомный)
-            if (window.innerWidth < 1300) {
-              var script = document.createElement("script");
-              script.src = "js/menu.js";
-              document.head.appendChild(script);
-            }
-          }
-        },
-        false
-      );
-    </script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

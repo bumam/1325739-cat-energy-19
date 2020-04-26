@@ -1,5 +1,6 @@
 .field-radio {
   width: 100%;
+  padding-left: 30px;
 
   &:hover {
     opacity: 0.8;
@@ -10,7 +11,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 87px;
+    padding-left: 70px;
   }
 }
 
@@ -26,8 +27,6 @@
 }
 
 .field-radio input[type="radio"] {
-  position: absolute;
-  z-index: -1;
   opacity: 0;
 }
 
@@ -39,7 +38,7 @@
   border-radius: 50%;
   border: 1px solid $btn-color;
   background-color: $btn-color;
-  left: -37px;
+  left: 9px;
   top: 2px;
   position: absolute;
 
@@ -49,4 +48,8 @@
     height: 16px;
     width: 16px;
   }
+}
+
+.field-radio input:focus + .field-radio__label {
+  opacity: 0.5;
 }

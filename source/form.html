@@ -18,7 +18,7 @@
                 srcset="img/logo-desktop.svg"
               />
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
-              <img src="../img/logo-mobile.svg" alt="Кэт-энержи" />
+              <img src="img/logo-mobile.svg" alt="Кэт-энержи" />
             </picture>
           </a>
           <button class="main-nav__btn">
@@ -147,11 +147,9 @@
             </div>
 
             <fieldset class="cat-form__client">
-              <div class="cat-form__client__wrapper">
-
-                <h2 class="cat-form__title cat-form__title--contact">
+              <div class="cat-form__container">
+                <h2 class="cat-form__title cat-form__title--contact cat-form__green--top">
                   Контактные данные (владельца кота)
-                  <span class="cat-form__span cat-form__span--top"></span>
                 </h2>
                 <div class="cat-form__email-tel-wrapper">
                   <div class="cat-form__data">
@@ -189,6 +187,7 @@
                         class="field-text__input field-text__input--tel"
                         name="phone"
                         type="tel"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                         placeholder="8 (960) 900-60-90"
                         required
                       />
@@ -212,9 +211,8 @@
 
             <fieldset class="cat-form__comments">
               <div class="cat-form__comment-wrapper">
-                <h2 class="cat-form__title cat-form__title--comment">
+                <h2 class="cat-form__title cat-form__title--comment cat-form__green-line">
                   Комментарий
-                  <span class="cat-form__span"></span>
                 </h2>
                 <div class="comment-area">
                   <textarea
@@ -230,9 +228,8 @@
 
             <fieldset class="cat-form__checkbox">
               <div class="cat-form__checkbox-wrapper">
-                <h2 class="cat-form__title cat-form__title--additional">
+                <h2 class="cat-form__title cat-form__title--additional cat-form__green-line">
                   Дополнительно
-                  <span class="cat-form__span"></span>
                 </h2>
                 <div class="cat-form__data-wrapper">
                   <div class="cat-form__data cat-form__data--in">
@@ -322,7 +319,7 @@
     </main>
 
     <footer class="footer-page">
-      <div class="footer-page__wrapper">
+      <div class="footer-page__wrapper footer-page__wrapper--form">
         <a class="footer-page__logo" href="index.html">
           <img
             class="footer-page__logo-image"
@@ -397,12 +394,6 @@
 
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="js/map.js"></script>
-    <script>
-      if (window.innerWidth < 768) {
-        var script = document.createElement("script");
-        script.src = "js/menu.js";
-        document.head.appendChild(script);
-      }
-    </script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

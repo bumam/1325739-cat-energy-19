@@ -18,7 +18,7 @@
                 srcset="img/logo-desktop.svg"
               />
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
-              <img src="../img/logo-mobile.svg" alt="Кэт-энержи" />
+              <img src="img/logo-mobile.svg" alt="Кэт-энержи" />
             </picture>
           </a>
           <button class="main-nav__btn">
@@ -358,9 +358,8 @@
       <div class="modification-catalog">
         <section class="extra-items">
           <div class="extra-items__wrapper">
-            <h2 class="extra-items__header">
+            <h2 class="extra-items__header extra-items__green-line">
               Дополнительные товары
-              <span class="cat-form__span cat-form__span-add"></span>
             </h2>
             <div class="extra-items__card-wrapper">
               <article class="card card--add">
@@ -458,7 +457,7 @@
 
       <section class="cooperation">
         <div class="cooperation__wrapper cooperation__wrapper--gray">
-          <div class="cooperation__inner">
+          <div class="cooperation__inner cooperation__catalog">
             <h2 class="cooperation__title">
               Приглашаем <br />
               к сотрудничеству дилеров!
@@ -548,14 +547,9 @@
         </div>
       </div>
     </footer>
+
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="js/map.js"></script>
-    <script>
-      if (window.innerWidth < 768) {
-        var script = document.createElement("script");
-        script.src = "js/menu.js";
-        document.head.appendChild(script);
-      }
-    </script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

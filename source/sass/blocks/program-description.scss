@@ -160,7 +160,7 @@
   margin: 0;
   margin-bottom: 19px;
   border-bottom: 1px solid $border;
-  padding-bottom: 22px;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -195,7 +195,7 @@
 }
 
 .program-description__more {
-  width: 100%;
+  width: 88px;
   line-height: 1;
 
   @include font-osw(16px);
@@ -208,7 +208,6 @@
 .program-description__link {
   position: relative;
   display: block;
-  width: fit-content;
   text-decoration: none;
   color: $header;
   margin-top: 0;
@@ -245,5 +244,9 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 110px;
   }
 }
