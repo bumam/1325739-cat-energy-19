@@ -109,6 +109,15 @@
   fill: $btn-color;
 }
 
+.field-text__input--tel:invalid:not(:placeholder-shown) + .field-text__svg-tel path,
+.field-text__input--email:invalid:not(:placeholder-shown) + .field-text__svg-email path {
+  fill: $invalid;
+}
+
+.field-text__input:invalid:not(:placeholder-shown) {
+  border-color: $invalid;
+}
+
 .field-text__input--email {
   @media (min-width: $desktop-width) {
     width: 486px;

@@ -15,8 +15,7 @@
     flex-direction: column;
     padding-left: 0;
     padding-right: 0;
-    background: linear-gradient(to right, $gray 0%, $gray 78.5%, #ebebeb 78.5%, #ebebeb 100%);
-    background-image: linear-gradient(to top, $gray 0%, $gray 78.5%, white 78.5%, white 100%);
+    background-image: linear-gradient(to top, $gray 0%, $gray 100%, white 100%, white 100%);
     background-position: bottom;
     background-size: 100% 78.5%;
     background-repeat: no-repeat;
@@ -130,7 +129,7 @@
 }
 
 .real-cat::before {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1031px) {
     content: "";
     position: absolute;
     height: 1px;

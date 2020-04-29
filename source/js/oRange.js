@@ -3,18 +3,21 @@ if (window.innerWidth >= 320 && window.innerWidth < 768) {
   oRange.value = 1;
 }
 
+window.onresize = document.body.clientWidth;
+
 window.addEventListener("resize", function(event) {
+  var clWidth = document.body.clientWidth;
   var oRange = document.querySelector('input[type="range"]');
 
-  if (window.innerWidth >= 320 && window.innerWidth < 768) {
+  if (clWidth >= 320 && clWidth < 768) {
     oRange.value = 1;
   }
 
-  if (window.innerWidth >= 768 && window.innerWidth < 1300) {
+  if (clWidth >= 768 && clWidth < 1300) {
     oRange.value = 50;
   }
 
-  if (window.innerWidth > 1300) {
-    oRange.value = 53;
+  if (clWidth > 1300) {
+    oRange.value = 52;
   }
 });
