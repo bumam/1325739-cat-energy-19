@@ -7,16 +7,16 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    width: 375px;
+    width: 364px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 86%;
+    width: 83%;
   }
 }
 
 .results__wrapper {
-  width: 45.5%;
+  width: 44%;
   text-align: center;
   border-radius: 3px;
 }
@@ -60,16 +60,21 @@
 
   @media (min-width: $tablet-width) {
     background-color: white;
-    width: auto;
+    width: 100px;
     font-size: 14px;
     padding-left: 8px;
     padding-right: 8px;
-    width: fit-content;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 38px;
     background-color: $gray;
-    margin-top: -2px;
+    padding-right: 15px;
+  }
+}
+
+.results__wrtite--width {
+  @media (min-width: $tablet-width) {
+    width: 130px;
   }
 }

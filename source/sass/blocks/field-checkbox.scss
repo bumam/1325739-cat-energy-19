@@ -1,8 +1,24 @@
-.field-checkbox__lebel {
+.field-checkbox {
+  padding-left: 30px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
   &:active {
     opacity: 0.3;
   }
 
+  @media (min-width: $tablet-width) {
+    padding-left: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+  }
+}
+
+.field-checkbox__lebel {
   @include font-osw(16px);
   color: $text-color;
 
@@ -19,8 +35,8 @@
   border-bottom: 2px solid #68b738;
   content: "";
   display: block;
-  left: -40px;
-  bottom: 9px;
+  left: 7px;
+  bottom: 7px;
   transform: rotate(-48deg);
   position: absolute;
 
@@ -32,18 +48,10 @@
   }
 }
 
-.field-checkbox {
-  @media (min-width: $tablet-width) {
-    padding-left: 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 60px;
-  }
+.field-checkbox__input:focus + .field-checkbox__lebel {
+  opacity: 0.5;
 }
 
 .field-checkbox input[type="checkbox"] {
-  position: absolute;
-  z-index: -1;
   opacity: 0;
 }

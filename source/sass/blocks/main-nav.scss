@@ -27,6 +27,10 @@
   background-color: transparent;
   position: relative;
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .main-nav__btn span {
