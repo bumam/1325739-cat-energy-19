@@ -4,25 +4,23 @@
   text-align: center;
   padding-top: 39px;
   border-top: 1px solid $border;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 auto;
   margin-bottom: 31px;
   min-height: 289px;
+  width: 100%;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     align-items: center;
-    margin-left: 30px;
-    margin-right: 30px;
     padding-top: 27px;
     margin-bottom: 0;
     padding-bottom: 29px;
-    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
     border: none;
     margin-right: 37px;
-    margin-left: 0;
+    margin-left: 75px;
     padding-top: 4px;
   }
 }
@@ -37,11 +35,10 @@
   color: white;
   position: absolute;
   margin-top: 187px;
-  margin-left: 56px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-left: 20%;
+    margin-left: 150px;
     text-align: left;
   }
 
@@ -71,5 +68,17 @@
       bottom: 121px;
       right: 32%;
     }
+  }
+}
+
+.gift__img {
+  @media (min-width: $tablet-width) {
+    width: 710px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 289px;
   }
 }

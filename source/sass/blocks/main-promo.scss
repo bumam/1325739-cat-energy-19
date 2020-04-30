@@ -110,10 +110,12 @@
 .main-promo__image-wrapper {
   @media (min-width: $tablet-width) {
     position: absolute;
-    transform: translate(30px);
+    right: 0;
+    margin-right: 4%;
   }
 
   @media (min-width: $desktop-width) {
-    transform: translate(490px);
+    right: 0;
+    margin-right: 22.5%;
   }
 }
