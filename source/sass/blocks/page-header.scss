@@ -40,6 +40,10 @@
   background-color: #64a83b;
   background-position: center;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     width: 0;
     height: 0;
@@ -52,5 +56,9 @@
     background-size: 720px, 696px;
     top: -7px;
     right: -2px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }
