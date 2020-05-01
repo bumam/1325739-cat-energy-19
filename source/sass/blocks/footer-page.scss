@@ -95,7 +95,7 @@
   width: 27px;
   height: 34px;
   display: block;
-  background-image: url("../img/htmlacademy.png");
+  background-image: url("../img/htmlacademy.svg");
   background-size: 27px 34px;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -115,6 +115,7 @@
   box-sizing: inherit;
   background-image: url("../img/htmlacademy-hover.png");
   background-repeat: no-repeat;
+  background-size: 27px 34px;
 }
 
 .footer-page__logo-image:active {

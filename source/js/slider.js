@@ -153,14 +153,14 @@ if (progress) {
     });
 
     btnBefore.addEventListener("click", function() {
-      imgBefore.style.clip = "rect(0 auto 0 0)";
+      imgBefore.style.clip = "rect(auto auto auto auto)";
       imgAfter.style.clip = "rect(0 0 0 0)";
       range.value = 0;
     });
 
     btnAfter.addEventListener("click", function() {
       imgBefore.style.clip = "rect(0 0 0 0)";
-      imgAfter.style.clip = "rect(0 auto 0 0)";
+      imgAfter.style.clip = "rect(auto auto auto auto)";
       range.value = 100;
     });
   }
