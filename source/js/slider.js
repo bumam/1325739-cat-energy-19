@@ -261,6 +261,8 @@ window.addEventListener("resize", function(event) {
   if (docWidth >= 768 && docWidth < 1300) {
     imgBefore.style.clip = "rect(auto, 350px, auto, auto)";
     imgAfter.style.clip = "rect(auto, 350px, auto, auto)";
+    imgBefore.style.width = "100%";
+    imgAfter.style.width = "100%";
 
     bigGradient.style.backgroundSize = "0% 0%";
     console.log("resize 768 big gradient 0%");
