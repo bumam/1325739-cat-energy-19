@@ -18,7 +18,7 @@
   padding-left: 19px;
   padding-right: 20px;
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -26,7 +26,7 @@
     justify-content: space-between;
     padding-left: 32px;
     padding-right: 30px;
-    padding-top: 50px;
+    padding-top: 55px;
     padding-bottom: 47px;
     align-items: center;
     text-align: start;
@@ -35,8 +35,8 @@
   @media (min-width: $desktop-width) {
     padding-left: 43px;
     padding-right: 36px;
-    padding-top: 66px;
-    padding-bottom: 60px;
+    padding-top: 63px;
+    padding-bottom: 50px;
   }
 }
 
@@ -88,34 +88,28 @@
   }
 }
 
-.footer-page__HTML-link::after {
-  box-sizing: inherit;
-  content: "";
-  position: relative;
-  width: 27px;
-  height: 34px;
-  display: block;
-  background-image: url("../img/htmlacademy.svg");
-  background-size: 27px 34px;
-  background-repeat: no-repeat;
+.footer-page__HTML-icon {
   cursor: pointer;
-  margin-top: -25px;
-  margin-left: 100%;
+  width: 37px;
+  margin-top: -35px;
+  margin-left: 97%;
 
   &:active {
     opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 137px;
+    margin-left: 129px;
   }
 }
 
-.footer-page__HTML-link:hover::after {
-  box-sizing: inherit;
-  background-image: url("../img/htmlacademy-hover.png");
-  background-repeat: no-repeat;
-  background-size: 27px 34px;
+.footer-page__HTML-link svg path {
+  pointer-events: all;
+  fill: #666666;
+}
+
+.footer-page__HTML-link:hover svg path {
+  fill: $btn-color;
 }
 
 .footer-page__logo-image:active {

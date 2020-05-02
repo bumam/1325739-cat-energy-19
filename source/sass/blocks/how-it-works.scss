@@ -89,8 +89,6 @@
   &--health::before {
     box-sizing: inherit;
     background-image: url("../img/advantage-leaf@1x.png");
-    width: 26px;
-    height: 29px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-leaf@2x.png");
@@ -100,8 +98,6 @@
   &--form::before {
     box-sizing: inherit;
     background-image: url("../img/advantage-powder@1x.png");
-    width: 29px;
-    height: 31px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-powder@2x.png");
@@ -111,8 +107,6 @@
   &--food::before {
     box-sizing: inherit;
     background-image: url("../img/advantage-dining@1x.png");
-    width: 80px;
-    height: 80px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-dining@2x.png");
@@ -122,8 +116,6 @@
   &--time::before {
     box-sizing: inherit;
     background-image: url("../img/advantage-clock@1x.png");
-    width: 26px;
-    height: 31px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-clock@2x.png");
