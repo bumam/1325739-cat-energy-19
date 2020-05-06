@@ -89,6 +89,8 @@
 }
 
 .footer-page__HTML-icon {
+  fill: currentColor;
+  color: #666666;
   cursor: pointer;
   width: 37px;
   margin-top: -35px;
@@ -103,13 +105,8 @@
   }
 }
 
-.footer-page__HTML-link svg path {
-  pointer-events: all;
-  fill: #666666;
-}
-
-.footer-page__HTML-link:hover svg path {
-  fill: $btn-color;
+.footer-page__HTML-link:hover svg {
+  color: $btn-color;
 }
 
 .footer-page__logo-image:active {

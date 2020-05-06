@@ -75,6 +75,8 @@
 }
 
 .field-text__svg-email {
+  color: #666666;
+  fill: currentColor;
   transform: translate(-35px, 12px);
 
   @media (min-width: $tablet-width) {
@@ -90,6 +92,8 @@
 }
 
 .field-text__svg-tel {
+  color: #666666;
+  fill: currentColor;
   transform: translate(-35px, 12px);
 
   @media (min-width: $tablet-width) {
@@ -104,14 +108,14 @@
   }
 }
 
-.field-text__input--tel:focus + .field-text__svg-tel path,
-.field-text__input--email:focus + .field-text__svg-email path {
-  fill: $btn-color;
+.field-text__input--tel:focus + .field-text__svg-tel,
+.field-text__input--email:focus + .field-text__svg-email {
+  color: $btn-color;
 }
 
 .field-text__input--tel:invalid:not(:placeholder-shown) + .field-text__svg-tel path,
 .field-text__input--email:invalid:not(:placeholder-shown) + .field-text__svg-email path {
-  fill: $invalid;
+  color: $invalid;
 }
 
 .field-text__input:invalid:not(:placeholder-shown) {
