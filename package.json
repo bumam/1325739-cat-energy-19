@@ -25,7 +25,6 @@
     "gulp-sourcemaps": "2.6.x",
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
-    "gulp-watch": "^5.0.1",
     "gulp-webp": "^4.0.1",
     "node-sass": "^4.14.1",
     "posthtml-include": "^1.4.3",
@@ -59,6 +58,7 @@
   "dependencies": {
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-server-livereload": "^1.9.2",
     "input-range-scss": "^1.5.2",
     "picturefill": "^3.0.3",
