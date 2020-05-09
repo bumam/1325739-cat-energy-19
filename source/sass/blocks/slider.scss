@@ -17,8 +17,8 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 30px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -386,13 +386,7 @@ input[type="range"]::-ms-fill-upper {
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(
-      to top,
-      $gray 0%,
-      $gray 73.5%,
-      white 73.5%,
-      white 100%
-    );
+    background-image: linear-gradient(to top, $gray 0%, $gray 73.5%, white 73.5%, white 100%);
     padding-bottom: 70px;
   }
 
