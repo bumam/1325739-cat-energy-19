@@ -1,25 +1,22 @@
-window.onload = () => {
-  var div = document.querySelector(".main-nav--open");
-  div.classList.remove("main-nav--open");
-};
-
-document.querySelector(".main-nav__btn").onclick = function(event) {
-  var show = document.querySelector(".main-nav");
-  this.classList.toggle("main-nav__btn--active");
-  show.classList.toggle("main-nav--open");
-  event.preventDefault();
-};
-
-window.addEventListener("resize", function(event) {
-  if (docWidth < tabletWidth) {
-    var div = document.querySelector(".main-nav--open");
-    div.classList.remove("main-nav--open");
-
-    document.querySelector(".main-nav__btn").onclick = function(event) {
-      var show = document.querySelector(".main-nav");
-      this.classList.toggle("main-nav__btn--active");
-      show.classList.toggle("main-nav--open");
-      event.preventDefault();
-    };
-  }
-});
+"use strict";
+(window.onload = function () {
+  document.querySelector(".main-nav--open").classList.remove("main-nav--open");
+}),
+  (document.querySelector(".main-nav__btn").onclick = function (n) {
+    var e = document.querySelector(".main-nav");
+    this.classList.toggle("main-nav__btn--active"),
+      e.classList.toggle("main-nav--open"),
+      n.preventDefault();
+  }),
+  window.addEventListener("resize", function (n) {
+    docWidth < tabletWidth &&
+      (document
+        .querySelector(".main-nav--open")
+        .classList.remove("main-nav--open"),
+      (document.querySelector(".main-nav__btn").onclick = function (n) {
+        var e = document.querySelector(".main-nav");
+        this.classList.toggle("main-nav__btn--active"),
+          e.classList.toggle("main-nav--open"),
+          n.preventDefault();
+      }));
+  });
