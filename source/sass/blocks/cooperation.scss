@@ -21,7 +21,7 @@
   box-sizing: border-box;
   justify-content: space-between;
   z-index: 3;
-  padding-top: 30px;
+  padding-top: 26px;
   padding-bottom: 25px;
   width: 88%;
   margin: 0 auto;
@@ -42,10 +42,10 @@
     margin-left: 40px;
     background-color: #ffffff;
     z-index: 10;
-    padding-right: 77px;
     line-height: 1.25;
-    padding-left: 79px;
     padding-top: 75px;
+    padding-left: 74px;
+    padding-right: 82px;
   }
 }
 
@@ -57,7 +57,7 @@
 
 .cooperation__index {
   @media (min-width: $tablet-width) {
-    padding-top: 60px;
+    padding-top: 64px;
   }
 
   @media (min-width: $desktop-width) {

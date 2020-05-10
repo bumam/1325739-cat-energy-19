@@ -22,7 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 40px;
+    padding-left: 35px;
     padding-right: 38px;
     padding-top: 48px;
   }
@@ -55,10 +55,22 @@
     height: 696px;
     background-size: 720px, 696px;
     top: -7px;
-    right: -2px;
+    right: 4px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
     }
+  }
+}
+
+.page-header__wrapper--catalog {
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+  }
+}
+
+.page-header__wrapper--form {
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
   }
 }

@@ -20,7 +20,7 @@ var babel = require("gulp-babel");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var webp = require("gulp-webp");
-var watch = require("gulp-watch");
+var htmlmin = require("gulp-htmlmin");
 
 const isDev = !process.env.NODE_ENV || process.env.NODE_ENV === "development";
 
@@ -49,6 +49,13 @@ gulp.task("js", function () {
     .pipe(gulp.dest("build/js"));
 });
 
+gulp.task("minify-html", () => {
+  return gulp
+    .src("source/**.html")
+    .pipe(gulpIf(!isDev, htmlmin({ collapseWhitespace: true })))
+    .pipe(gulp.dest("build"));
+});
+
 gulp.task("sprite", function () {
   return gulp
     .src("source/img/icon-*.svg")
@@ -61,7 +68,7 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("source/img"));
 });
 
-gulp.task("html", function () {
+gulp.task("html-include", function () {
   return gulp
     .src("source/*.html")
     .pipe(posthtml([include()]))
@@ -81,7 +88,6 @@ gulp.task("copy", function () {
       [
         "source/fonts/**/*.{woff,woff2}",
         "source/img/**",
-        "source/**.html",
         "!source/img/icon-*.svg",
       ],
       {
@@ -127,14 +133,14 @@ gulp.task("server", function () {
   });
 });
 
-gulp.task("refresh", (done) => {
+gulp.task("refresh", function (done) {
   server.reload();
   done();
 });
 
 gulp.task("watch", function () {
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
-  gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/*.html", gulp.series("minify-html", "refresh"));
   gulp.watch("source/js/**/*.js", gulp.series("js"));
   gulp.watch("source/fonts/*.{woff,woff2}", gulp.series("copy:fonts"));
   gulp.watch("source/img/**/*.{jpg,png}", gulp.series("newimages"));
@@ -148,12 +154,14 @@ gulp.task(
     "image-min",
     "sprite",
     gulp.parallel("css", "js", "copy"),
-    "html",
+    "minify-html",
+    "html-include",
     "newimages"
   )
 );
 gulp.task(
   "development",
-  gulp.series("build", gulp.parallel("server", "watch"))
+  gulp.series("build", gulp.parallel("watch", "server"))
 );
+
 gulp.task("default", gulp.series("development"));
