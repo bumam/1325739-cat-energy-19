@@ -115,5 +115,6 @@
 
   @media (min-width: $desktop-width) {
     transform: translateX(490px);
+    -ms-transform: translateX(-60px);/* stylelint-disable property-no-vendor-prefix */
   }
 }
