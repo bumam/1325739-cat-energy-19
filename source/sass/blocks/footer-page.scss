@@ -48,7 +48,7 @@
 
 .footer-page__wrapper--form {
   @media (min-width: $desktop-width) {
-    padding-top: 67px;
+    padding-top: 72px;
   }
 }
 
@@ -72,12 +72,16 @@
   }
 }
 
-.footer-page__HTML-Academy {
+.footer-page__html-academy {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -10px;
+  }
 }
 
-.footer-page__HTML-link {
+.footer-page__html-link {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   color: $text-color;
@@ -95,7 +99,7 @@
   }
 }
 
-.footer-page__HTML-icon {
+.footer-page__html-icon {
   fill: currentColor;
   color: #666666;
   cursor: pointer;
@@ -109,11 +113,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 129px;
+    margin-left: 8px;
+    margin-bottom: -11px;
   }
 }
 
-.footer-page__HTML-link:hover svg {
+.footer-page__html-link:hover svg {
   color: $btn-color;
 }
 

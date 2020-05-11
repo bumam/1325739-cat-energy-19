@@ -78,6 +78,6 @@
 
   @media (min-width: $desktop-width) {
     width: 568px;
-    height: 52px;
+    min-height: 52px;
   }
 }

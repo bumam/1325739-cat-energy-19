@@ -216,32 +216,6 @@
     opacity: 0.3;
   }
 
-  &::after {
-    box-sizing: inherit;
-    content: "";
-    position: absolute;
-    display: block;
-    top: 3px;
-    right: -36px;
-    width: 24px;
-    height: 11px;
-    background-image: url("../img/icon-right-arrow-verylong.svg");
-    background-repeat: no-repeat;
-    background-size: 32px 11px;
-    background-position: right center;
-    transition: all 0.3s ease;
-
-    @media (min-width: $tablet-width) {
-      right: -48px;
-      top: 5px;
-    }
-  }
-
-  &:hover::after {
-    right: -45px;
-    width: 32px;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
@@ -249,4 +223,33 @@
   @media (min-width: $tablet-width) {
     width: 110px;
   }
+}
+
+.program-description__link::after {
+  box-sizing: inherit;
+  content: "";
+  position: absolute;
+  display: block;
+  top: 3px;
+  right: -36px;
+  height: 12px;
+  background-image: url("../img/right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-size: 25px 11px;
+  background-position: left center;
+  width: 33px;
+
+  @media (min-width: $tablet-width) {
+    right: -45px;
+    top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -55px;
+  }
+}
+
+.program-description__link:hover::after {
+  background-size: 33px 11px;
+  background-image: url("../img/right-arrow-verylong.svg");
 }

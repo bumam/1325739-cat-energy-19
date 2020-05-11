@@ -1,6 +1,7 @@
 "use strict";
 (window.onload = function () {
   document.querySelector(".main-nav--open").classList.remove("main-nav--open");
+  document.querySelector(".main-nav__btn").style.opacity = 1;
 }),
   (document.querySelector(".main-nav__btn").onclick = function (n) {
     var e = document.querySelector(".main-nav");

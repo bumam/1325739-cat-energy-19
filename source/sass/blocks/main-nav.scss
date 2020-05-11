@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   width: 100%;
 
+
   &--open {
     .main-nav__wrapper-module {
       display: flex;
@@ -15,6 +16,10 @@
     flex-wrap: nowrap;
     padding-bottom: 13px;
   }
+}
+
+.main-nav__btn {
+  opacity: 0;
 }
 
 .main-nav__btn,

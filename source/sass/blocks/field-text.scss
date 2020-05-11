@@ -32,14 +32,14 @@
 }
 
 .field-text input {
-  height: 45px;
+  min-height: 45px;
   padding-left: 20px;
   border: 1px solid $light-border;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    height: 52px;
+    min-height: 52px;
     padding-left: 25px;
   }
 
@@ -87,6 +87,7 @@
     width: 18px;
     height: 14px;
     transform: translate(533px, 23px);
+    -ms-transform: translate(-35px, 18px);/* stylelint-disable property-no-vendor-prefix */
     position: absolute;
   }
 }
@@ -104,6 +105,7 @@
     width: 21px;
     height: 21px;
     transform: translate(536px, 18px);
+    -ms-transform: translate(-35px, 18px);
     position: absolute;
   }
 }
