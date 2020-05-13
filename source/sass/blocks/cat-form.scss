@@ -96,7 +96,7 @@
 
 .cat-form__data {
   width: 100%;
-  justify-content: space-between;
+  justify-content: left;
   display: flex;
 
   @media (min-width: $desktop-width) {
@@ -128,8 +128,8 @@
   flex-wrap: wrap;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 23px;
-  padding-bottom: 28px;
+  padding-top: 15px;
+  padding-bottom: 20px;
   border: 1px solid $dark-border;
   min-height: 158px;
   align-content: space-between;
@@ -138,13 +138,13 @@
   @media (min-width: $tablet-width) {
     min-height: 196px;
     padding-left: 0;
-    padding-top: 20px;
+    padding-top: 18px;
     padding-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    padding-top: 25px;
+    padding-top: 20px;
     padding-bottom: 20px;
   }
 }
@@ -165,11 +165,11 @@
 
 .cat-form__title--additional {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   width: 166px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 45px;
     padding: 0 40px;
     margin-left: -40px;
     width: 210px;
@@ -227,13 +227,13 @@
   @media (min-width: $tablet-width) {
     padding-left: 71px;
     padding-right: 67px;
-    padding-bottom: 57px;
+    padding-bottom: 85px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 41px;
     padding-right: 40px;
-    padding-bottom: 65px;
+    padding-bottom: 90px;
   }
 }
 
@@ -278,7 +278,7 @@
   padding-left: 19px;
   padding-right: 20px;
   padding-top: 28px;
-  padding-bottom: 16px;
+  padding-bottom: 23px;
 
   &--in {
     margin-bottom: 23px;
@@ -288,36 +288,14 @@
     padding-right: 67px;
     padding-left: 70px;
     padding-top: 0;
-    padding-bottom: 18px;
+    padding-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 42px;
-    padding-right: 135px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-bottom: 13px;
   }
-}
-
-.cat-form__data--in label::before {
-  content: "";
-  display: block;
-  height: 30px;
-  width: 30px;
-  border: 1px solid $dark-border;
-  top: -5px;
-  left: 0;
-  box-sizing: border-box;
-
-  @media (min-width: $tablet-width) {
-    height: 40px;
-    width: 40px;
-    left: 0;
-  }
-}
-
-.cat-form__data--in label::before,
-.cat-form__data--in label::after {
-  position: absolute;
 }
 
 .cat-form__data--in label {
@@ -325,7 +303,7 @@
   cursor: pointer;
 
   @media (min-width: $desktop-width) {
-    padding-left: 40px;
+    padding-left: 55px;
   }
 }
 
@@ -420,26 +398,17 @@
 }
 
 .cat-form__data--in {
-  margin-bottom: 22px;
+  margin-bottom: 5px;
 
   @media (min-width: $tablet-width) {
     width: 46%;
-    margin-bottom: 46px;
+    margin-bottom: 9px;
+    justify-content: left;
   }
 
   @media (min-width: $desktop-width) {
-    width: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-
-    &:nth-child(2) {
-      margin-left: -25px;
-    }
-
-    &:last-child {
-      margin-right: 0;
-      margin-left: 70px;
-    }
+    width: 245px;
+    margin-bottom: 30px;
   }
 }
 
@@ -506,29 +475,7 @@
   }
 }
 
-.cat-form__individual label::before {
-  content: "";
-  display: block;
-  height: 28px;
-  width: 28px;
-  border-radius: 50%;
-  border: 1px solid $dark-border;
-  top: -7px;
-  left: 0;
-
-  @media (min-width: $tablet-width) {
-    height: 40px;
-    width: 40px;
-    top: -10px;
-    left: 17px;
-  }
-}
-
-.cat-form__individual label {
-  position: relative;
-}
-
-.cat-form__individual label::before,
-.cat-form__individual label::after {
-  position: absolute;
+.cat-form__data input[type="checkbox"] {
+  opacity: 0;
+  margin-left: -10px;
 }

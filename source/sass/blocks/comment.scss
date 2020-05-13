@@ -1,4 +1,4 @@
-.comment-area___text {
+.comment-area__text {
   @include font-osw(16px);
   color: $text-color;
   padding: 13px;
@@ -8,7 +8,7 @@
   border: solid 1px $dark-border;
   box-sizing: border-box;
   width: 100%;
-  min-height: 150px;
+  height: 150px;
 
   @media (min-width: $tablet-width) {
     height: 174px;
@@ -23,7 +23,7 @@
 
 .comment-area {
   width: 100%;
-  min-height: 150px;
+  height: 150px;
 
   &:hover {
     opacity: 0.8;

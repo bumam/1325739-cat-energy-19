@@ -2,6 +2,9 @@ try {
   ("use strict");
   var myMap;
   function init() {
+    document
+      .querySelector(".cooperation__map-wrapper")
+      .classList.remove("cooperation__map-wrapper");
     var e;
     document.body.clientWidth < 768
       ? ((myMap = new ymaps.Map("map", {

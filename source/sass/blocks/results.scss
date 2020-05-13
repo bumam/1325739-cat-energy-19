@@ -43,7 +43,7 @@
   }
 }
 
-.results__wrtite {
+.results__write {
   font-family: "Arial", sans-serif;
   color: $text-color;
   text-align: center;
@@ -73,7 +73,7 @@
   }
 }
 
-.results__wrtite--width {
+.results__write--width {
   @media (min-width: $tablet-width) {
     width: 130px;
   }

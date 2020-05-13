@@ -30,9 +30,7 @@
         <symbol id="icon-htmlacademy" viewBox="0 0 55 55">
           <path d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z"></path>
         </symbol>
-        <symbol id="icon-insta" viewBox="0 0 16.1 16">
-          <style>
-          </style>
+        <symbol id="icon-instagram" viewBox="0 0 16.1 16">
           <path d="M11.8 1C13.6 1 15 2.4 15 4.2v7.7c0 1.7-1.4 3.1-3.1 3.1H4.2C2.4 15 1 13.6 1 11.8V4.2C1 2.4 2.4 1 4.2 1h7.6m0-1H4.2C1.9 0 0 1.9 0 4.2v7.7C0 14.1 1.9 16 4.2 16h7.7c2.3 0 4.2-1.9 4.2-4.2V4.2C16 1.9 14.1 0 11.8 0z"></path>
           <path d="M8 4.9c1.7 0 3.1 1.4 3.1 3.1S9.7 11.1 8 11.1 4.9 9.7 4.9 8 6.3 4.9 8 4.9m0-1C5.7 3.9 3.9 5.7 3.9 8s1.8 4.1 4.1 4.1 4.1-1.8 4.1-4.1S10.3 3.9 8 3.9z"></path>
           <circle cx="12.3" cy="3.7" r=".9"></circle>
@@ -69,7 +67,7 @@
     <header class="page-header">
       <div class="page-header__wrapper page-header__wrapper--form">
         <nav class="main-nav main-nav--open">
-          <a class="main-nav__logo" href="index.html">
+          <a class="main-nav__logo" href="index.html" title="Перейти на главную страницу">
             <picture>
               <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -113,19 +111,19 @@
                 <div class="cat-form__block-wrapper">
                   <div class="cat-form__data cat-form__data--100">
                     <label class="field-text">
-                      <span class="field-text__lebel">Имя:*</span>
+                      <span class="field-text__label">Имя:*</span>
                       <input class="field-text__input field-text__input--name" name="yourname" type="text" placeholder="БАРСИК" required="">
                     </label>
                   </div>
                   <div class="cat-form__data cat-form__data--100">
                     <label class="field-text">
-                      <span class="field-text__lebel">Вес (кг):*</span>
+                      <span class="field-text__label">Вес (кг):*</span>
                       <input class="field-text__input field-text__input--weight" name="weight" type="number" value="7" max="20" step="0.1" required="">
                     </label>
                   </div>
                   <div class="cat-form__data cat-form__data--100">
                     <label class="field-text">
-                      <span class="field-text__lebel">Возраст (лет):</span>
+                      <span class="field-text__label">Возраст (лет):</span>
                       <input class="field-text__input field-text__input--age" name="age" type="number" value="7" required="">
                     </label>
                   </div>
@@ -134,23 +132,23 @@
 
               <fieldset class="cat-form__radio">
                 <div class="cat-form__radio-wrapper">
-                  <div class="cat-form__individual">
-                    <label class="field-radio">
-                      <input class="field-radio__input" type="radio" name="goal" value="skinny" checked="">
-                      <span class="field-radio__label">Похудение</span>
+                  <div class="cat-form__individual field-radio">
+                    <input class="field-radio__input" id="skinny" type="radio" name="goal" value="skinny" checked="">
+                    <label class="field-radio__label" for="skinny">
+                      Похудение
                     </label>
                   </div>
-                  <div class="cat-form__individual">
-                    <label class="field-radio">
-                      <input class="field-radio__input" type="radio" name="goal" value="power">
-                      <span class="field-radio__label">Набор массы</span>
+                  <div class="cat-form__individual field-radio">
+                    <input class="field-radio__input" type="radio" name="goal" value="power" id="power">
+                    <label class="field-radio__label" for="power">
+                      Набор массы
                     </label>
                   </div>
 
-                  <div class="cat-form__individual">
-                    <label class="field-radio">
-                      <input class="field-radio__input" type="radio" name="goal" value="uncertainty">
-                      <span class="field-radio__label">Не знаю (Нужен ваш совет)</span>
+                  <div class="cat-form__individual field-radio">
+                    <input class="field-radio__input" type="radio" name="goal" value="uncertainty" id="uncertainty">
+                    <label class="field-radio__label" for="uncertainty">
+                      Не знаю (Нужен ваш совет)
                     </label>
                   </div>
                 </div>
@@ -165,7 +163,7 @@
                 <div class="cat-form__email-tel-wrapper">
                   <div class="cat-form__data">
                     <label class="field-text">
-                      <span class="field-text__lebel field-text__lebel--email">E-mail:*</span>
+                      <span class="field-text__label field-text__label--email">E-mail:*</span>
                       <input class="field-text__input field-text__input--email" name="email" type="email" placeholder="kuklachev@gmail.com" required="">
                       <svg class="field-text__svg-email" width="17" height="23">
                         <use xlink:href="#icon-mail"></use>
@@ -174,7 +172,7 @@
                   </div>
                   <div class="cat-form__data">
                     <label class="field-text">
-                      <span class="field-text__lebel field-text__lebel--tel">Телефон:*</span>
+                      <span class="field-text__label field-text__label--tel">Телефон:*</span>
                       <input class="field-text__input field-text__input--tel" name="phone" type="tel" placeholder="8 (960) 900-60-90" required="">
                       <svg class="field-text__svg-tel" width="20" height="20">
                         <use xlink:href="#icon-phone"></use>
@@ -191,7 +189,7 @@
                   Комментарий
                 </h2>
                 <div class="comment-area">
-                  <textarea class="comment-area___text" rows="10" cols="45" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+                  <textarea class="comment-area__text" rows="10" cols="45" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
                 </div>
               </div>
             </fieldset>
@@ -203,31 +201,30 @@
                 </h2>
                 <div class="cat-form__data-wrapper">
                   <div class="cat-form__data cat-form__data--in">
-                    <label class="field-checkbox">
-                      <input class="field-checkbox__input" type="checkbox" name="anti-shugar">
-                      <span class="field-checkbox__lebel">Сахарозаменитель
-                      </span>
+                    <input class="field-checkbox__input" type="checkbox" name="anti-sugar" id="anti-sugar" checked="">
+                    <label class="field-checkbox field-checkbox__label" for="anti-sugar">
+                      Сахарозаменитель
                     </label>
                   </div>
 
                   <div class="cat-form__data cat-form__data--in">
-                    <label class="field-checkbox">
-                      <input class="field-checkbox__input" type="checkbox" name="water">
-                      <span class="field-checkbox__lebel">Питьевая вода</span>
+                    <input class="field-checkbox__input" type="checkbox" name="water" id="water">
+                    <label class="field-checkbox field-checkbox__label" for="water">
+                      Питьевая вода
                     </label>
                   </div>
 
                   <div class="cat-form__data cat-form__data--in">
-                    <label class="field-checkbox">
-                      <input class="field-checkbox__input" type="checkbox" name="milk">
-                      <span class="field-checkbox__lebel">Молоко</span>
+                    <input class="field-checkbox__input" type="checkbox" name="milk" id="milk">
+                    <label class="field-checkbox field-checkbox__label" for="milk">
+                      Молоко
                     </label>
                   </div>
 
                   <div class="cat-form__data cat-form__data--in">
-                    <label class="field-checkbox">
-                      <input class="field-checkbox__input" type="checkbox" name="vitamins">
-                      <span class="field-checkbox__lebel">Витамины</span>
+                    <input class="field-checkbox__input" type="checkbox" name="vitamins" id="vitamins">
+                    <label class="field-checkbox field-checkbox__label" for="vitamins">
+                      Витамины
                     </label>
                   </div>
                 </div>
@@ -235,7 +232,6 @@
             </fieldset>
             <div class="cat-form__required-wrapper">
               <input class="button button--validate" type="submit" value="Отправить заявку">
-
               <p class="cat-form__required">* — Обязательные поля</p>
             </div>
           </div>
@@ -249,7 +245,7 @@
               Приглашаем <br>
               к сотрудничеству дилеров!
             </h2>
-            <div class="cooperation__adress">
+            <div class="cooperation__address">
               <p class="cooperation__street">
                 ул. Большая Конюшенная, д. 19/8
               </p>
@@ -257,16 +253,18 @@
             </div>
           </div>
         </div>
-        <div class="map" id="map" style="width: 100%; height: 400px;"></div>
+        <div class="cooperation__map-wrapper">
+          <div class="map" id="map" style="width: 100%; height: 400px;"></div>
+        </div>
       </section>
     </main>
 
     <footer class="footer-page">
       <div class="footer-page__wrapper footer-page__wrapper--form">
-        <a class="footer-page__logo" href="index.html">
+        <a class="footer-page__logo" href="index.html" title="Перейти на главную страницу">
           <img class="footer-page__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Кэт-энержи">
         </a>
-        <ul class="social social__catalog">
+        <ul class="social">
           <li class="social__item">
             <a class="social__link" href="#">
               <svg class="social__item-icon social__item-icon--vk" width="22" height="12">
@@ -276,8 +274,8 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <svg class="social__item-icon social__item-icon--insta" width="16" height="16">
-                <use xlink:href="#icon-insta"></use>
+              <svg class="social__item-icon social__item-icon--instagram" width="16" height="16">
+                <use xlink:href="#icon-instagram"></use>
               </svg>
             </a>
           </li>

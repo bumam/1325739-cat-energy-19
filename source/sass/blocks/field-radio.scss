@@ -1,19 +1,13 @@
 .field-radio {
   width: 100%;
   padding-left: 30px;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+  padding-top: 8px;
+  padding-bottom: 8px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 60px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding-left: 73px;
+    padding-top: 13px;
+    padding-bottom: 15px;
   }
 }
 
@@ -40,18 +34,51 @@
   border-radius: 50%;
   border: 1px solid $btn-color;
   background-color: $btn-color;
-  left: 9px;
-  top: 2px;
   position: absolute;
+  margin-left: -35px;
+  margin-top: -15px;
 
   @media (min-width: $tablet-width) {
-    left: 28px;
-    top: 3px;
     height: 16px;
     width: 16px;
+    margin-left: -47px;
+    margin-top: -19px;
   }
 }
 
-.field-radio input:focus + .field-radio__label {
-  opacity: 0.5;
+.field-radio__input:focus ~ .field-radio__label::before {
+  border-color: #bababa;
+}
+
+.field-radio__input:not(:disabled) ~ .field-radio__label:hover::before {
+  border-color: #bababa;
+}
+
+.field-radio__input:disabled ~ .field-radio__label {
+  opacity: 0.3;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+.field-radio__label:active {
+  opacity: 0.3;
+}
+
+.field-radio__label::before {
+  content: "";
+  display: block;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  border: 1px solid $dark-border;
+  margin-left: -44px;
+  margin-top: -6px;
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
+    width: 40px;
+    margin-left: -59px;
+    margin-top: -8px;
+  }
 }

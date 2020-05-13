@@ -1,4 +1,4 @@
-.field-text__lebel {
+.field-text__label {
   @include font-osw(16px);
   margin-right: 12px;
   color: $header;
@@ -72,22 +72,26 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+  }
 }
 
 .field-text__svg-email {
   color: #666666;
   fill: currentColor;
-  transform: translate(-35px, 12px);
+  transform: translate(-35px, 10px);
 
   @media (min-width: $tablet-width) {
-    transform: translate(-35px, 18px);
+    transform: translate(-35px, 15px);
   }
 
   @media (min-width: $desktop-width) {
     width: 18px;
     height: 14px;
-    transform: translate(533px, 23px);
-    -ms-transform: translate(-35px, 18px);/* stylelint-disable property-no-vendor-prefix */
+    transform: translate(533px, 18px);
+    -ms-transform: translate(-35px, 18px); /* stylelint-disable property-no-vendor-prefix */
     position: absolute;
   }
 }

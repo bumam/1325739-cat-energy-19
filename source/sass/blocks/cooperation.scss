@@ -30,7 +30,7 @@
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 65px;
-    padding-bottom: 63px;
+    padding-bottom: 50px;
     margin-bottom: 0;
   }
 
@@ -89,7 +89,7 @@
   margin: 0;
 }
 
-.cooperation__adress,
+.cooperation__address,
 .cooperation__street {
   line-height: 1.47;
   margin-top: 0;
@@ -99,12 +99,12 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     width: 164px;
-    text-align: end;
+    text-align: right;
     line-height: 1.25;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: start;
+    text-align: left;
   }
 }
 
@@ -122,5 +122,33 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -3px;
+  }
+}
+
+.cooperation__map-wrapper::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 50%;
+  width: 62px;
+  height: 53px;
+  margin-top: 140px;
+  margin-left: -31px;
+  background-image: url("../img/map-pin.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 124px;
+    height: 106px;
+    margin-left: -62px;
+    margin-top: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 69%;
+    margin-left: 0;
   }
 }

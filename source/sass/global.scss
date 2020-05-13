@@ -2,7 +2,9 @@
   visibility: hidden;
 }
 
-html {
+.page-header,
+.page-main,
+.footer-page {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
@@ -33,14 +35,11 @@ body {
 }
 
 .page-header,
-.footer-page {
+.footer-page,
+.page-footer {
   margin: 0 auto;
   min-width: 320px;
   width: 100%;
-}
-
-footer {
-  flex: 0 0 auto;
 }
 
 img {

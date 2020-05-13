@@ -1918,7 +1918,7 @@ input[type="range"]::-ms-fill-upper {
     .social__item-icon--vk {
       width: 30px;
       height: 16px; }
-    .social__item-icon--insta {
+    .social__item-icon--instagram {
       width: 23px;
       height: 23px; }
     .social__item-icon--fb {
@@ -1946,10 +1946,10 @@ input[type="range"]::-ms-fill-upper {
       width: 14px;
       height: 28px; } }
 
-.social__item-icon--insta {
+.social__item-icon--instagram {
   height: 17px; }
   @media (min-width: 768px) {
-    .social__item-icon--insta {
+    .social__item-icon--instagram {
       height: 23px; } }
 
 .social__link {

@@ -41,7 +41,7 @@ if (document.querySelector(".slider")) {
     (imgAfter = progress.querySelector(".slider-image__after")),
     (scale = progress.querySelector(".slider__range-wrapper")),
     (range = scale.querySelector(".slider__range")),
-    (bigGradient = document.querySelector(".real-cat__gradient")),
+    (bigGradient = document.querySelector(".real-cat__gradient-js")),
     1300 <= docWidth &&
       (setTimeout(function () {
         (progress.style.backgroundImage =

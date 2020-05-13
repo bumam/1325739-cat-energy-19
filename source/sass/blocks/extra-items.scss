@@ -1,25 +1,17 @@
 .extra-items {
-  @media (min-width: $tablet-width) {
-    margin-top: -77px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: -67px;
-  }
-}
-
-.extra-items__wrapper {
   padding-top: 28px;
   padding-right: 18px;
   padding-left: 20px;
 
   @media (min-width: $tablet-width) {
+    margin-top: -77px;
     padding-right: 30px;
     padding-left: 30px;
     padding-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: -67px;
     padding-bottom: 85px;
     padding-left: 3px;
     padding-right: 0;
