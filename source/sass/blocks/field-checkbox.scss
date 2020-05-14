@@ -33,8 +33,8 @@
   border-bottom: 2px solid #68b738;
   content: "";
   display: block;
-  left: 4px;
-  bottom: 15px;
+  left: 5px;
+  top: 10px;
   transform: rotate(-48deg);
   position: absolute;
 
@@ -42,12 +42,12 @@
     width: 20px;
     height: 13px;
     left: 9px;
-    bottom: 27px;
+    top: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 2px;
-    bottom: 29px;
+    left: 0;
+    top: 20px;
   }
 }
 

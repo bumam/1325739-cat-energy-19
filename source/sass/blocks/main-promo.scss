@@ -5,14 +5,28 @@
   max-width: 1300px;
   box-sizing: border-box;
 
-  @media (min-width: $desktop-width) {
+  background-image: linear-gradient(to top, #ffffff 175px, transparent 175px),
+    url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: auto, 320px auto;
+  width: 100%;
+  background-color: #64a83b;
+  background-position: top;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: linear-gradient(to top, #ffffff 175px, transparent 175px),
+      url("../img/index-background-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
     margin-bottom: 135px;
     background: none;
+    background-image: none;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    margin-bottom: 135px;
+    flex-direction: column;
   }
 }
 
@@ -72,8 +86,7 @@
 }
 
 .main-promo__slogan {
-  height: 16px;
-  margin-bottom: 29px;
+  min-height: 16px;
   margin-top: 0;
 
   @include font-osw(14px);
@@ -83,7 +96,7 @@
     font-size: 20px;
     padding-left: 119px;
     text-align: left;
-    margin-bottom: 25px;
+    margin-bottom: 0;
     max-width: 630px;
     height: auto;
   }
@@ -96,29 +109,44 @@
 .main-promo__button {
   padding-right: 20px;
   padding-left: 20px;
-  margin-top: -2px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    position: relative;
     transform: translate(100px, 26px);
     margin-bottom: 553px;
   }
 
   @media (min-width: $desktop-width) {
-    transform: translate(-452px, 313px);
-    margin-bottom: 447px;
-    padding-left: 33px;
+    transform: translate(0, 0);
+    margin-bottom: 132px;
+    padding-left: 117px;
   }
 }
 
 .main-promo__image-wrapper {
+  width: 100%;
+  max-width: 1300px;
+
   @media (min-width: $tablet-width) {
     position: absolute;
-    transform: translateX(30px);
   }
 
   @media (min-width: $desktop-width) {
-    transform: translateX(490px);
-    -ms-transform: translateX(-60px); /* stylelint-disable property-no-vendor-prefix */
+    transform: translateX(110px);
+    -ms-transform: translate(110px, -270px); /* stylelint-disable property-no-vendor-prefix */
+  }
+}
+
+.main-promo__text-block {
+  display: flex;
+  padding-bottom: 13px;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 50px;
   }
 }
